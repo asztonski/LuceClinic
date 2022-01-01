@@ -1,0 +1,2605 @@
+@media (min-width: 1550px) {
+  h1 {
+    font-size: 80px;
+    letter-spacing: 2.304px;
+    line-height: 88px;
+  }
+
+  section h2 {
+    line-height: 54px;
+    font-size: 48px;
+    letter-spacing: 2.304px;
+  }
+
+  header h2, .offers .price-wrapper h3 {
+    font-size: 32px;
+    letter-spacing: 1.536px;
+    line-height: 44.33px;
+  }
+
+  h3, body.contact .left h2 {
+    letter-spacing: 1.056px;
+    line-height: 44.33px;
+    font-size: 32px;
+  }
+
+  h4, body.contact h5, p.price {
+    font-size: 22px;
+    letter-spacing: 1.056px;
+    line-height: 44.33px;
+  }
+
+  p, ul li {
+    font-size: 18px;
+    letter-spacing: 0.288px;
+    line-height: 26px;
+  }
+
+  a, button span, p.option-p {
+    font-size: 16px;
+  }
+
+  p.price {
+    font-family: "Jost SemiBold";
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  :-moz-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  input[type=text], input[type=email], textarea {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  section {
+    padding: 0 181px;
+  }
+
+  button.reg-btn {
+    padding: 20px 49px;
+    font-size: 16px;
+  }
+
+  .menuBox {
+    height: 100vh;
+  }
+
+  div.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  div.loader .logobox {
+    padding-top: 128px;
+  }
+  div.loader svg.loader-text-colored {
+    left: 0;
+    top: 40%;
+    left: 16px;
+  }
+  div.loader svg.loader-woman {
+    bottom: 0;
+    width: 35%;
+    height: auto;
+  }
+
+  nav {
+    padding: 32.5px 190px;
+  }
+  nav a.link {
+    margin-right: 48px;
+  }
+  nav a.icon {
+    margin-left: 8px;
+    line-height: unset;
+  }
+
+  header {
+    height: 100vh;
+  }
+  header main {
+    padding-left: 190px;
+    background-position: 26%;
+  }
+  header main div.wrapper {
+    margin: 152px 0 0 190px;
+    width: max-content;
+  }
+  header main h1 {
+    position: relative;
+  }
+  header main h2::after {
+    width: calc( 135.9% + 16px );
+    height: 36.1%;
+    left: -36%;
+  }
+  header main p {
+    margin-top: 32px;
+  }
+  header main .reg-btn {
+    margin-top: 39px;
+  }
+  header main .slider-nav {
+    margin-top: 624px;
+    align-items: flex-end;
+    width: 20.35%;
+    justify-content: space-between;
+  }
+  header main .slider-nav p {
+    font-size: 46px;
+    width: auto;
+    line-height: 34.75px;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    top: 4px;
+  }
+  header main .slider-nav p::after {
+    content: "";
+    display: block;
+    background: white;
+    position: absolute;
+    height: 46%;
+    width: 146px;
+    bottom: 2px;
+    left: -20%;
+    z-index: -1;
+  }
+  header main .slider-nav button {
+    margin-right: 13px;
+  }
+
+  section {
+    padding-top: 92px;
+    padding-bottom: 92px;
+    position: relative;
+  }
+  section .photobox {
+    height: 624px;
+  }
+  section h2 span.reg::after {
+    left: -2.5%;
+    width: calc( 100.5% + 16px);
+  }
+  section .nav-area {
+    top: 0;
+    left: 0;
+  }
+
+  section.normal {
+    align-items: center;
+  }
+  section.normal .right {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  section.normal .right .wrapper {
+    width: 70%;
+  }
+  section.normal .right .photobox::after {
+    left: -7.5%;
+  }
+  section.normal .left {
+    width: 45.556%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  section.normal .left .wrapper {
+    width: 67%;
+  }
+  section.normal .left .photobox::after {
+    right: -7.5%;
+  }
+  section.normal img {
+    right: 0;
+  }
+
+  section.reverse .right {
+    width: 45%;
+  }
+  section.reverse .left {
+    width: 50%;
+  }
+
+  section.about {
+    padding-top: 88px;
+    padding-bottom: 112px;
+    padding-right: 21.75%;
+  }
+  section.about div.right {
+    width: 40%;
+  }
+  section.about p {
+    margin-top: 0;
+  }
+
+  section.pico-sure {
+    padding-top: 0;
+  }
+  section.pico-sure .right {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  section.pico-sure .right .wrapper {
+    width: 70%;
+    margin-top: 32px;
+    margin-left: 24px;
+  }
+  section.pico-sure .right .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.pico-sure .right .wrapper button {
+    margin-top: 39px;
+  }
+
+  section.hybrid .left {
+    align-items: center;
+    align-self: center;
+  }
+  section.hybrid .left .wrapper {
+    width: 67%;
+    margin-top: 32px;
+  }
+  section.hybrid .left .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.hybrid .left .wrapper button {
+    margin-top: 40px;
+  }
+  section.hybrid .right {
+    width: 45%;
+  }
+
+  body.index section.hybrid .left {
+    width: 50%;
+  }
+
+  section.makeup .right .wrapper {
+    margin-top: 32px;
+  }
+  section.makeup .right .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.makeup .right .wrapper button {
+    margin-top: 39px;
+  }
+
+  section.screw .left .wrapper {
+    margin-top: 32px;
+  }
+  section.screw .left .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.screw .left .wrapper button {
+    margin-top: 40px;
+  }
+
+  section.changes .right .wrapper {
+    margin-top: 32px;
+  }
+  section.changes .right .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.changes .right .wrapper button {
+    margin-top: 39px;
+  }
+
+  section.moles .wrapper {
+    margin-top: 32px;
+  }
+  section.moles .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.moles .wrapper button {
+    margin-top: 39px;
+  }
+
+  section.fat .wrapper {
+    margin-top: 32px;
+  }
+  section.fat .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.fat .wrapper button {
+    margin-top: 39px;
+  }
+  section.fat .right .wrapper {
+    width: 67%;
+  }
+
+  section.light {
+    padding-top: 168px;
+    padding-bottom: 92px;
+  }
+  section.light h3 {
+    margin-top: 30px;
+  }
+  section.light .right {
+    width: 48%;
+  }
+  section.light .right .wrapper {
+    width: 77%;
+  }
+  section.light .right .wrapper button {
+    margin-top: 40px;
+  }
+  section.light .right .wrapper h4 {
+    margin-top: 8px;
+  }
+  section.light .right .wrapper p {
+    margin-top: 39px;
+  }
+  section.light svg.clinic {
+    left: 20.5%;
+    bottom: 4.1%;
+  }
+  section.light .left {
+    width: 45.556%;
+  }
+  section.light .svgbox {
+    width: 100%;
+  }
+  section.light svg.woman {
+    position: absolute;
+    bottom: -18.7%;
+    left: 1.6%;
+  }
+  section.light svg.woman path {
+    stroke-width: 1px;
+  }
+
+  section.contact {
+    padding-top: 304px;
+    padding-bottom: 256px;
+  }
+  section.contact .left {
+    align-items: center;
+    width: 45.556%;
+  }
+  section.contact .left .wrapper {
+    width: 64%;
+  }
+  section.contact .left .wrapper button {
+    margin-top: 39px;
+  }
+  section.contact .right {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  section.contact .right .wrapper {
+    width: 67%;
+    margin-top: 4px;
+  }
+  section.contact .right .wrapper h5 {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 24px;
+    letter-spacing: 2.304px;
+    position: relative;
+    bottom: 5px;
+  }
+  section.contact .right .wrapper .email {
+    margin-top: 8px;
+  }
+
+  footer {
+    padding: 90px 192px 32px;
+  }
+  footer .wrapper {
+    width: 100%;
+    margin-bottom: 79px;
+    justify-content: space-between;
+  }
+  footer .wrapper .left div, footer .wrapper .right div {
+    margin-right: 88px;
+  }
+  footer .wrapper .left div h5, footer .wrapper .right div h5 {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  footer .wrapper .left div a, footer .wrapper .right div a {
+    line-height: 32px;
+    width: max-content;
+    align-items: center;
+    font-size: 18px;
+  }
+  footer .wrapper .left div a svg, footer .wrapper .right div a svg {
+    margin-right: 16px;
+  }
+  footer .wrapper .left div a.flex, footer .wrapper .right div a.flex {
+    margin-bottom: 8px;
+  }
+  footer .wrapper .left div p.phone, footer .wrapper .right div p.phone {
+    margin-top: 40px;
+    margin-bottom: 8px;
+    position: relative;
+    line-height: 32px;
+    align-items: center;
+  }
+  footer .wrapper .left div p.phone svg, footer .wrapper .right div p.phone svg {
+    margin-right: 16px;
+  }
+  footer .wrapper .left .last, footer .wrapper .right .last {
+    margin-right: 0;
+  }
+  footer .bottom svg {
+    margin-left: 16px;
+  }
+
+  body.contact section {
+    padding: 72px 0 0;
+  }
+  body.contact main {
+    width: 100%;
+    padding: 0 320px 136px 184px;
+    justify-content: space-between;
+  }
+  body.contact .right {
+    width: 36.171%;
+  }
+  body.contact label span {
+    font-size: 14px;
+    letter-spacing: 0.672px;
+    line-height: 44.33px;
+  }
+  body.contact label span svg {
+    margin-right: 16px;
+  }
+  body.contact h2 {
+    margin-bottom: 32px;
+  }
+  body.contact h3 {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 2.304px;
+  }
+  body.contact .first-p {
+    margin-bottom: 56px;
+  }
+  body.contact h3 {
+    margin-bottom: 24px;
+  }
+  body.contact p {
+    margin-top: 0;
+  }
+  body.contact h5.address {
+    margin-top: 32px;
+  }
+
+  .inputbox input[type=radio] {
+    width: 24px;
+    height: 24px;
+  }
+  .inputbox i {
+    width: 24px;
+    height: 24px;
+  }
+  .inputbox p {
+    margin-left: 32px;
+  }
+
+  section.formcontainer .right .phonecall {
+    margin-top: 24px;
+  }
+  section.formcontainer .right .reg-btn {
+    margin-top: 48px;
+  }
+
+  .dropdown-button {
+    padding: 16px 0;
+    margin: 32px 0 0;
+  }
+  .dropdown-button span svg {
+    margin-right: 16px;
+    margin-left: 8px;
+  }
+
+  .dropdown-topic {
+    width: 100%;
+  }
+
+  .dropdown-options {
+    max-height: 209px;
+  }
+  .dropdown-options .option label {
+    padding: 0 0 0 8px;
+  }
+
+  #form-topic label span {
+    padding-left: 8px;
+  }
+
+  #form-time label span {
+    padding-left: 6px;
+  }
+
+  .dropdown-arrow {
+    width: 13px;
+    height: 13px;
+    bottom: -5px;
+    left: -15px;
+    margin-top: 2px;
+  }
+  .dropdown-arrow:before, .dropdown-arrow:after {
+    width: 10px;
+    height: 1px;
+  }
+  .dropdown-arrow:after {
+    top: -5px;
+    left: 5px;
+  }
+
+  .inputbox {
+    margin-right: 16px;
+  }
+
+  .dropdown-box {
+    margin-top: 32px;
+  }
+
+  .input-wrapper {
+    padding: 16px 0;
+  }
+  .input-wrapper svg {
+    margin-right: 16px;
+    margin-left: 8px;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .namebox {
+    margin-top: 24px;
+  }
+
+  .msgbox .input-wrapper {
+    padding: 16px 0 15px;
+  }
+  .msgbox .input-wrapper textarea {
+    padding: 27px 0 0 48px;
+  }
+  .msgbox .input-wrapper svg {
+    bottom: 16px;
+    left: 3px;
+    position: absolute;
+  }
+
+  .dropdown-topic svg.icon {
+    bottom: 20px;
+    left: 8px;
+  }
+  .dropdown-topic .dropdown-label-topic {
+    padding-left: 46px;
+  }
+
+  .dropdown-time svg.icon {
+    bottom: 19px;
+    left: 8px;
+  }
+  .dropdown-time .dropdown-label-time {
+    padding-left: 46px;
+  }
+
+  .errorbox div, .succesbox div {
+    padding: 20px 74px 28px;
+    width: 26.563%;
+    top: 30%;
+  }
+  .errorbox div h4, .succesbox div h4 {
+    margin-bottom: 24px;
+  }
+  .errorbox div p, .succesbox div p {
+    margin-bottom: 40px;
+  }
+  .errorbox div button, .succesbox div button {
+    width: 70.445%;
+  }
+
+  body.prices section {
+    padding-bottom: 152px;
+  }
+  body.prices section h3 {
+    margin-bottom: 80px;
+  }
+  body.prices section main {
+    justify-content: space-between;
+  }
+  body.prices section main div.flex {
+    justify-content: space-between;
+  }
+  body.prices section main div.flex div.price-wrapper {
+    width: 42.328%;
+  }
+  body.prices section main div.flex div.price-wrapper p.about {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 99%;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex {
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex p {
+    height: max-content;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex div.column {
+    width: max-content;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex div.column p {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  body.prices section main div.flex div.price-wrapper.last p {
+    margin-top: 88px;
+  }
+  body.prices section main div.flex div.price-wrapper.last button {
+    margin-top: 48px;
+  }
+  body.prices section main div.flex.first {
+    margin-bottom: 64px;
+  }
+  body.prices section main div.flex.second {
+    margin-bottom: 80px;
+  }
+  body.prices section main svg.luna {
+    right: 2%;
+    bottom: -6.5%;
+    width: 31.6vw;
+  }
+  body.prices section main svg.luna.visible path {
+    animation: luna 30s forwards;
+  }
+
+  body.offer header main {
+    background-image: url("assets/images/offer/header.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  body.offer header main div.wrapper {
+    margin: 152px 0 0 0;
+  }
+  body.offer header main div.wrapper h2::after {
+    width: calc( 162.9% + 16px);
+    left: -64%;
+  }
+  body.offer section.pico-sure {
+    padding-top: 128px;
+  }
+  body.offer section.fat {
+    padding-bottom: 184px;
+  }
+
+  body.picosure header main {
+    background-image: url("assets/images/slider/bg_slider2.jpg");
+  }
+  body.picosure section .grey-bg {
+    background-image: url(assets/images/picosure/bg_offer_picosure1.png);
+  }
+
+  body.hybrid header main {
+    background-image: url("assets/images/slider/bg_slider3.jpg");
+  }
+  body.hybrid section .grey-bg {
+    background-image: url(assets/images/img_offer_2_bg.png);
+  }
+  body.hybrid section .right button {
+    margin-top: 48px;
+  }
+
+  body.makeup header main {
+    background-image: url("assets/images/slider/bg_slider4.jpg");
+  }
+  body.makeup section .grey-bg {
+    background-image: url(assets/images/img_offer_3_bg.png);
+  }
+
+  body.screw header main {
+    background-image: url("assets/images/slider/bg_slider5.jpg");
+  }
+  body.screw section .grey-bg {
+    background-image: url(assets/images/img_offer_4_bg.png);
+  }
+
+  body.changes header main {
+    background-image: url("assets/images/slider/bg_slider6.jpg");
+  }
+  body.changes section .grey-bg {
+    background-image: url(assets/images/img_offer_5_bg.png);
+  }
+
+  body.moles header main {
+    background-image: url("assets/images/slider/bg_slider7.jpg");
+  }
+  body.moles section .grey-bg {
+    background-image: url(assets/images/img_offer_6_bg.png);
+  }
+
+  body.fat header main {
+    background-image: url("assets/images/slider/bg_slider8.jpg");
+  }
+  body.fat section .grey-bg {
+    background-image: url(assets/images/img_offer_7_bg.png);
+  }
+
+  body.offers header main {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  body.offers header main div.wrapper {
+    margin: 56px 0 0 0;
+  }
+  body.offers section.offers {
+    padding-top: 128px;
+    align-items: flex-start;
+  }
+  body.offers section.offers .left .wrapper {
+    width: auto;
+    margin-top: 0;
+  }
+  body.offers section.offers .left p {
+    width: 79.094%;
+  }
+  body.offers section.offers .right {
+    width: 45.5%;
+    align-items: unset;
+  }
+  body.offers section.offers .right .wrapper {
+    margin-top: 0;
+  }
+  body.offers section.offers .right .price-wrapper h3 {
+    margin-bottom: 16px;
+  }
+  body.offers section.offers .right .price-wrapper div.flex {
+    justify-content: space-between;
+  }
+  body.offers section.offers .right .price-wrapper p {
+    margin-top: 0;
+  }
+  body.offers section.offers .right .price-wrapper div.column p {
+    margin-bottom: 16px;
+  }
+  body.offers section.contact {
+    padding-top: 134px;
+  }
+  body.offers section.contact .left {
+    width: auto;
+  }
+  body.offers section.contact .left div.wrapper {
+    width: auto;
+  }
+  body.offers section.contact .right {
+    width: 54.5%;
+    justify-content: space-between;
+  }
+  body.offers section.contact .right .wrapper {
+    margin-top: 0;
+  }
+  body.offers section.contact .right .wrapper .email {
+    margin-top: 23px;
+  }
+  body.offers section {
+    padding-right: 312px;
+    padding-left: 181px;
+  }
+  body.offers section h2 span.reg::after {
+    left: -68.5%;
+    width: calc( 166.2% + 16px);
+  }
+
+  ul {
+    margin-top: 8px;
+    list-style: disc inside;
+  }
+
+  body.about header main .wrapper {
+    margin: 96px 0 0 0;
+  }
+  body.about header svg.woman {
+    right: 7.75%;
+    top: 0;
+  }
+  body.about section {
+    padding: 64px 181px 64px 0;
+  }
+  body.about section .photobox::after {
+    width: 88.666%;
+  }
+  body.about section .photobox .colored-bg {
+    width: 100%;
+  }
+  body.about section .wrapper p {
+    width: 88%;
+  }
+  body.about section button {
+    margin-top: 24px;
+  }
+  body.about section.reverse {
+    padding: 64px 0 64px 181px;
+  }
+  body.about section.reverse button {
+    margin-top: 48px;
+  }
+  body.about section.last {
+    padding: 64px 0 128px 181px;
+  }
+  body.about section.bottom {
+    padding: 0 552px 136px;
+    text-align: center;
+  }
+  body.about section.bottom a.first {
+    margin-right: 40px;
+  }
+  body.about section.bottom button {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1550px) {
+  h1 {
+    font-size: 4.1666666667vw;
+    letter-spacing: 0.12vw;
+    line-height: 4.5833333333vw;
+  }
+
+  section h2 {
+    line-height: 2.8125vw;
+    font-size: 2.5vw;
+    letter-spacing: 0.12vw;
+  }
+
+  header h2 {
+    font-size: 1.6666666667vw;
+    letter-spacing: 0.08vw;
+    line-height: 2.3088541667vw;
+  }
+
+  h3 {
+    letter-spacing: 0.055vw;
+    line-height: 2.3088541667vw;
+    font-size: 1.6666666667vw;
+  }
+
+  h4, body.contact h5 {
+    font-size: 1.1458333333vw;
+    letter-spacing: 0.055vw;
+    line-height: 2.3088541667vw;
+  }
+
+  p, ul li {
+    font-size: 0.9375vw;
+    letter-spacing: 0.015vw;
+    line-height: 1.3541666667vw;
+  }
+
+  a {
+    font-size: 0.8333333333vw;
+  }
+
+  p.price {
+    font-family: "Jost SemiBold";
+    font-weight: 400;
+    margin: 0;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 0.8333333333vw;
+    letter-spacing: 0.04vw;
+  }
+
+  ::-moz-placeholder {
+    font-size: 0.8333333333vw;
+    letter-spacing: 0.04vw;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 0.8333333333vw;
+    letter-spacing: 0.04vw;
+  }
+
+  :-moz-placeholder {
+    font-size: 0.8333333333vw;
+    letter-spacing: 0.04vw;
+  }
+
+  input[type=text], input[type=email] {
+    font-size: 0.8333333333vw;
+    letter-spacing: 0.04vw;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  section {
+    padding: 0 9.4270833333vw;
+  }
+
+  button.reg-btn {
+    padding: 1.0416666667vw 2.5520833333vw;
+    font-size: 0.8333333333vw;
+  }
+
+  nav {
+    padding: 1.6927083333vw 9.8958333333vw;
+  }
+  nav a.link {
+    margin-right: 2.5vw;
+  }
+  nav a.icon {
+    margin-left: 0.4166666667vw;
+    line-height: unset;
+  }
+
+  div.loader {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  div.loader .logobox {
+    padding-top: 128px;
+  }
+  div.loader svg.loader-text-colored {
+    left: 0;
+    top: 40%;
+    left: 16px;
+  }
+  div.loader svg.loader-woman {
+    bottom: 0;
+    width: 35%;
+    height: auto;
+  }
+
+  .menubox {
+    height: 100vh;
+  }
+
+  header {
+    height: 100vh;
+  }
+  header main {
+    padding-left: 9.8958333333vw;
+    background-position: 26%;
+  }
+  header main div.wrapper {
+    width: 43%;
+    margin: 7.9166666667vw 0 0 9.8958333333vw;
+  }
+  header main h1 {
+    position: relative;
+  }
+  header main h2::after {
+    width: calc( 135.9% + 16px );
+    height: 36.1%;
+    left: -36%;
+  }
+  header main p {
+    margin-top: 1.6666666667vw;
+  }
+  header main .reg-btn {
+    margin-top: 2.03125vw;
+  }
+  header main .slider-nav {
+    margin-top: 32.5vw;
+    align-items: flex-end;
+    width: 37.867%;
+    justify-content: space-between;
+  }
+  header main .slider-nav p {
+    font-size: 2.3958333333vw;
+    width: auto;
+    line-height: 1.8098958333vw;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    top: 0.1041666667vw;
+  }
+  header main .slider-nav p::after {
+    content: "";
+    display: block;
+    background: white;
+    position: absolute;
+    height: 46%;
+    width: 277%;
+    bottom: 0;
+    left: -20%;
+    z-index: -1;
+  }
+  header main .slider-nav button {
+    margin-right: 17px;
+  }
+
+  section {
+    padding-top: 4.7916666667vw;
+    padding-bottom: 4.7916666667vw;
+    position: relative;
+  }
+  section .photobox {
+    height: 32.5vw;
+  }
+  section img {
+    width: 40.5729166667vw;
+    right: 0;
+  }
+  section h2 span.reg::after {
+    left: -2.5%;
+    width: calc( 100.5% + 0.8333333333333334vw);
+  }
+  section .nav-area {
+    top: 0;
+    left: 0;
+  }
+
+  section.normal {
+    align-items: center;
+  }
+  section.normal .right {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  section.normal .right .wrapper {
+    width: 70%;
+  }
+  section.normal .right .photobox::after {
+    left: -7.5%;
+  }
+  section.normal .left {
+    align-items: center;
+    position: relative;
+    width: 45.556%;
+  }
+  section.normal .left .wrapper {
+    width: 67%;
+  }
+  section.normal .left .photobox::after {
+    right: -7.5%;
+  }
+
+  section.reverse .right {
+    width: 45%;
+  }
+  section.reverse .left {
+    width: 50%;
+  }
+
+  section.about {
+    padding-top: 4.5833333333vw;
+    padding-bottom: 5.8333333333vw;
+    padding-right: 21.75%;
+  }
+  section.about div.right {
+    width: 40%;
+  }
+  section.about p {
+    margin-top: 0;
+  }
+
+  section.pico-sure {
+    padding-top: 0;
+  }
+  section.pico-sure .right .wrapper {
+    margin-top: 1.6666666667vw;
+    margin-left: 1.25vw;
+  }
+  section.pico-sure .right .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.pico-sure .right .wrapper button {
+    margin-top: 2.03125vw;
+  }
+
+  section.hybrid .left {
+    align-self: center;
+    align-items: center;
+    width: 50%;
+  }
+  section.hybrid .left .wrapper {
+    margin-top: 1.6666666667vw;
+  }
+  section.hybrid .left .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.hybrid .left .wrapper button {
+    margin-top: 2.0833333333vw;
+  }
+
+  section.makeup .right .wrapper {
+    margin-top: 1.6666666667vw;
+  }
+  section.makeup .right .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.makeup .right .wrapper button {
+    margin-top: 2.03125vw;
+  }
+
+  section.screw .left .wrapper {
+    margin-top: 1.6666666667vw;
+  }
+  section.screw .left .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.screw .left .wrapper button {
+    margin-top: 2.0833333333vw;
+  }
+
+  section.changes .right .wrapper {
+    margin-top: 1.6666666667vw;
+  }
+  section.changes .right .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.changes .right .wrapper button {
+    margin-top: 2.03125vw;
+  }
+
+  section.moles .wrapper {
+    margin-top: 1.6666666667vw;
+  }
+  section.moles .wrapper h2 {
+    padding-left: 0.4166666667vw;
+  }
+  section.moles .wrapper button {
+    margin-top: 2.03125vw;
+  }
+
+  section.fat .wrapper {
+    margin-top: 32px;
+  }
+  section.fat .wrapper h2 {
+    padding-left: 8px;
+  }
+  section.fat .wrapper button {
+    margin-top: 39px;
+  }
+  section.fat .right .wrapper {
+    width: 67%;
+  }
+
+  section.light {
+    padding-top: 8.75vw;
+    padding-bottom: 4.7916666667vw;
+  }
+  section.light h3 {
+    margin-top: 1.5625vw;
+  }
+  section.light .right {
+    width: 48%;
+  }
+  section.light .right .wrapper {
+    width: 77%;
+  }
+  section.light .right .wrapper button {
+    margin-top: 2.0833333333vw;
+  }
+  section.light .right .wrapper h4 {
+    margin-top: 0.4166666667vw;
+  }
+  section.light .right .wrapper p {
+    margin-top: 2.03125vw;
+  }
+  section.light svg.woman {
+    width: 49.2223958333vw;
+    height: 41.4661458333vw;
+    position: absolute;
+    bottom: -7.5%;
+    left: 2.5%;
+  }
+  section.light svg.woman path {
+    stroke-width: 1px;
+  }
+  section.light svg.clinic {
+    width: 37.097917vw;
+    height: 6.2vw;
+    left: 21.5%;
+    bottom: 22.1%;
+  }
+  section.light .left {
+    width: 45.556%;
+  }
+  section.light .svgbox {
+    width: 100%;
+    left: -30px;
+  }
+
+  section.contact {
+    padding-top: 15.8333333333vw;
+    padding-bottom: 13.3333333333vw;
+  }
+  section.contact .left {
+    justify-content: center;
+    align-items: center;
+    width: 45.556%;
+  }
+  section.contact .left .wrapper {
+    width: 64%;
+  }
+  section.contact .left .wrapper button {
+    margin-top: 2.03125vw;
+  }
+  section.contact .right {
+    width: 50%;
+    align-items: center;
+  }
+  section.contact .right .wrapper {
+    width: 67%;
+  }
+  section.contact .right .wrapper h5 {
+    font-size: 2.5vw;
+    line-height: 2.8125vw;
+    margin-bottom: 1.25vw;
+  }
+  section.contact .right .wrapper .email {
+    margin-top: 0.4166666667vw;
+  }
+
+  footer {
+    padding: 4.6875vw 10vw 1.6666666667vw;
+  }
+  footer .wrapper {
+    width: 100%;
+    margin-bottom: 4.1145833333vw;
+    justify-content: space-between;
+  }
+  footer .wrapper .left div, footer .wrapper .right div {
+    margin-right: 4.5833333333vw;
+  }
+  footer .wrapper .left div h5, footer .wrapper .right div h5 {
+    font-size: 1.1458333333vw;
+    margin-bottom: 0.8333333333vw;
+  }
+  footer .wrapper .left div a, footer .wrapper .right div a {
+    line-height: 1.6666666667vw;
+    width: max-content;
+    align-items: center;
+  }
+  footer .wrapper .left div a svg, footer .wrapper .right div a svg {
+    margin-right: 0.8333333333vw;
+  }
+  footer .wrapper .left div a.flex, footer .wrapper .right div a.flex {
+    margin-bottom: 0.4166666667vw;
+  }
+  footer .wrapper .left div p.phone, footer .wrapper .right div p.phone {
+    margin-top: 2.0833333333vw;
+  }
+  footer .wrapper .left .last, footer .wrapper .right .last {
+    margin-right: 0;
+  }
+  footer .bottom svg {
+    margin-left: 0.8333333333vw;
+  }
+
+  body.contact section {
+    padding: 3.75vw 0 0;
+  }
+  body.contact main {
+    padding: 0 16.6666666667vw 7.0833333333vw 9.5833333333vw;
+    justify-content: space-between;
+  }
+  body.contact .right {
+    width: 36.171%;
+  }
+  body.contact label span {
+    font-size: 0.7291666667vw;
+    letter-spacing: 0.035vw;
+    line-height: 2.3088541667vw;
+  }
+  body.contact h2 {
+    margin-bottom: 1.6666666667vw;
+  }
+  body.contact h3 {
+    font-size: 2.5vw;
+    line-height: 2.8125vw;
+    letter-spacing: 0.12vw;
+  }
+  body.contact .first-p {
+    margin-bottom: 2.9166666667vw;
+  }
+  body.contact h3 {
+    margin-bottom: 1.25vw;
+  }
+  body.contact p {
+    margin-top: 0;
+  }
+  body.contact h5.address {
+    margin-top: 1.6666666667vw;
+  }
+  body.contact img {
+    width: unset;
+  }
+
+  .inputbox input[type=radio] {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+  .inputbox i {
+    width: 1.25vw;
+    height: 1.25vw;
+  }
+  .inputbox p {
+    margin-left: 1.6666666667vw;
+  }
+
+  section.formcontainer .right .phonecall {
+    margin-top: 1.25vw;
+  }
+  section.formcontainer .right .reg-btn {
+    margin-top: 2.5vw;
+  }
+
+  .dropdown-topic {
+    width: 100%;
+  }
+
+  .dropdown-button {
+    padding: 0.8333333333vw 0;
+    margin: 1.6666666667vw 0 0;
+  }
+  .dropdown-button span svg {
+    margin-right: 0.8333333333vw;
+  }
+
+  .dropdown-topic svg.icon {
+    bottom: 1.0416666667vw;
+    left: 0.4166666667vw;
+  }
+  .dropdown-topic .dropdown-label-topic {
+    padding-left: 2.3958333333vw;
+  }
+
+  .dropdown-time svg.icon {
+    bottom: 0.9895833333vw;
+    left: 0.4166666667vw;
+  }
+  .dropdown-time .dropdown-label-time {
+    padding-left: 2.3958333333vw;
+  }
+
+  .dropdown-options {
+    max-height: 10.8854166667vw;
+  }
+  .dropdown-options .option label {
+    padding: 0 0 0 0.4166666667vw;
+  }
+  .dropdown-options .option label span svg {
+    margin-right: 0.8333333333vw;
+  }
+
+  #form-topic label span {
+    padding-left: 2.0833333333vw;
+  }
+
+  #form-time label span {
+    padding-left: 1.9791666667vw;
+  }
+
+  .dropdown-arrow {
+    width: 0.6770833333vw;
+    height: 0.6770833333vw;
+    bottom: -0.2604166667vw;
+    left: -0.78125vw;
+    margin-top: 0.1041666667vw;
+  }
+  .dropdown-arrow:before, .dropdown-arrow:after {
+    width: 0.5208333333vw;
+    height: 0.0520833333vw;
+  }
+  .dropdown-arrow:after {
+    top: -0.2604166667vw;
+    left: 0.2604166667vw;
+  }
+
+  .inputbox {
+    margin-right: 0.8333333333vw;
+  }
+
+  .dropdown-box {
+    margin-top: 1.6666666667vw;
+  }
+
+  .input-wrapper {
+    padding: 0.8333333333vw 0;
+  }
+  .input-wrapper svg {
+    margin-right: 0.8333333333vw;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .namebox {
+    margin-top: 1.25vw;
+  }
+
+  .msgbox .input-wrapper {
+    padding: 1.25vw 0 0.78125vw;
+  }
+  .msgbox .input-wrapper textarea {
+    padding: 1.40625vw 0 0 2.5vw;
+  }
+  .msgbox svg {
+    bottom: 0.8333333333vw;
+    left: 0.15625vw;
+    position: absolute;
+  }
+
+  .errorbox div, .succesbox div {
+    padding: 20px 74px 28px;
+    width: 26.563%;
+    top: 30%;
+  }
+  .errorbox div h4, .succesbox div h4 {
+    margin-bottom: 24px;
+  }
+  .errorbox div p, .succesbox div p {
+    margin-bottom: 40px;
+  }
+  .errorbox div button, .succesbox div button {
+    width: 70.445%;
+  }
+
+  body.prices section {
+    padding-bottom: 7.9166666667vw;
+  }
+  body.prices section h3 {
+    margin-bottom: 4.1666666667vw;
+  }
+  body.prices section main {
+    justify-content: space-between;
+  }
+  body.prices section main div.flex {
+    justify-content: space-between;
+  }
+  body.prices section main div.flex div.price-wrapper {
+    width: 42.328%;
+  }
+  body.prices section main div.flex div.price-wrapper p.about {
+    margin-bottom: 2.0833333333vw;
+    margin-top: 2.0833333333vw;
+    width: 99%;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex {
+    justify-content: space-between;
+    margin-bottom: 0.2083333333vw;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex p {
+    height: max-content;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex div.column {
+    width: max-content;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex div.column p {
+    margin-top: 0;
+    margin-bottom: 0.4166666667vw;
+  }
+  body.prices section main div.flex div.price-wrapper.last p {
+    margin-top: 4.5833333333vw;
+  }
+  body.prices section main div.flex div.price-wrapper.last button {
+    margin-top: 2.5vw;
+  }
+  body.prices section main div.flex.first {
+    margin-bottom: 3.3333333333vw;
+  }
+  body.prices section main div.flex.second {
+    margin-bottom: 4.1666666667vw;
+  }
+  body.prices section main svg.luna {
+    right: 2%;
+    bottom: -6.5%;
+    width: 40%;
+  }
+  body.prices section main svg.luna.visible path {
+    animation: luna 30s forwards;
+  }
+
+  body.offer header main {
+    background-image: url("assets/images/offer/header.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  body.offer header main div.wrapper {
+    margin: 7.9166666667vw 0 0 0;
+  }
+  body.offer header main div.wrapper p {
+    width: 44%;
+  }
+  body.offer header main div.wrapper h2::after {
+    width: calc( 162.9% + 16px);
+    left: -64%;
+  }
+  body.offer section.pico-sure {
+    padding-top: 6.6666666667vw;
+  }
+  body.offer section.fat {
+    padding-bottom: 9.5833333333vw;
+  }
+
+  body.picosure header main {
+    background-image: url("assets/images/slider/bg_slider2.jpg");
+  }
+  body.picosure section .grey-bg {
+    background-image: url(assets/images/picosure/bg_offer_picosure1.png);
+  }
+
+  body.hybrid header main {
+    background-image: url("assets/images/slider/bg_slider3.jpg");
+  }
+  body.hybrid section .grey-bg {
+    background-image: url(assets/images/img_offer_2_bg.png);
+  }
+  body.hybrid section .right button {
+    margin-top: 48px;
+  }
+
+  body.makeup header main {
+    background-image: url("assets/images/slider/bg_slider4.jpg");
+  }
+  body.makeup section .grey-bg {
+    background-image: url(assets/images/img_offer_3_bg.png);
+  }
+
+  body.screw header main {
+    background-image: url("assets/images/slider/bg_slider5.jpg");
+  }
+  body.screw section .grey-bg {
+    background-image: url(assets/images/img_offer_4_bg.png);
+  }
+
+  body.changes header main {
+    background-image: url("assets/images/slider/bg_slider6.jpg");
+  }
+  body.changes section .grey-bg {
+    background-image: url(assets/images/img_offer_5_bg.png);
+  }
+
+  body.moles header main {
+    background-image: url("assets/images/slider/bg_slider7.jpg");
+  }
+  body.moles section .grey-bg {
+    background-image: url(assets/images/img_offer_6_bg.png);
+  }
+
+  body.fat header main {
+    background-image: url("assets/images/slider/bg_slider8.jpg");
+  }
+  body.fat section .grey-bg {
+    background-image: url(assets/images/img_offer_7_bg.png);
+  }
+
+  body.offers header main {
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  body.offers header main div.wrapper {
+    margin: 2.9166666667vw 0 0 0;
+  }
+  body.offers section.offers {
+    padding-top: 6.6666666667vw;
+    align-items: flex-start;
+  }
+  body.offers section.offers .left .wrapper {
+    width: 70%;
+    margin-top: 0;
+  }
+  body.offers section.offers .left p {
+    width: 78.79%;
+  }
+  body.offers section.offers .right {
+    width: 45.5%;
+    align-items: unset;
+  }
+  body.offers section.offers .right .price-wrapper h3 {
+    margin-bottom: 0.8333333333vw;
+  }
+  body.offers section.offers .right .price-wrapper div.flex {
+    justify-content: space-between;
+  }
+  body.offers section.offers .right .price-wrapper p {
+    margin-top: 0;
+  }
+  body.offers section.offers .right .price-wrapper div.column p {
+    margin-bottom: 0.8333333333vw;
+  }
+  body.offers section.contact {
+    padding-top: 6.9791666667vw;
+  }
+  body.offers section.contact .left {
+    width: auto;
+  }
+  body.offers section.contact .left div.wrapper {
+    width: auto;
+  }
+  body.offers section.contact .right {
+    width: 54.5%;
+    justify-content: space-between;
+  }
+  body.offers section.contact .right .wrapper {
+    margin-top: 0;
+  }
+  body.offers section.contact .right .wrapper .email {
+    margin-top: 1.1979166667vw;
+  }
+  body.offers section {
+    padding-right: 16.25vw;
+    padding-left: 9.4270833333vw;
+  }
+  body.offers section h2 span.reg::after {
+    left: -63.5%;
+    width: calc( 163.2% + 0.8333333333333334vw);
+  }
+
+  body.about header main .wrapper {
+    margin: 5vw 0 0 0;
+  }
+  body.about header main .wrapper p {
+    width: 68%;
+  }
+  body.about header svg.woman {
+    right: 7.75%;
+    top: 0;
+    width: 49.3359375vw;
+  }
+  body.about section {
+    padding: 3.3333333333vw 9.4270833333vw 3.3333333333vw 0;
+  }
+  body.about section .photobox::after {
+    width: 88.666%;
+  }
+  body.about section .photobox .colored-bg {
+    width: 100%;
+  }
+  body.about section .wrapper p {
+    width: 80%;
+  }
+  body.about section button {
+    margin-top: 1.25vw;
+  }
+  body.about section.reverse {
+    padding: 3.3333333333vw 0 3.3333333333vw 9.4270833333vw;
+  }
+  body.about section.reverse button {
+    margin-top: 2.5vw;
+  }
+  body.about section.last {
+    padding: 3.3333333333vw 0 9.1666666667vw 9.4270833333vw;
+  }
+  body.about section.bottom {
+    padding: 0 28.75vw 7.0833333333vw;
+    text-align: center;
+  }
+  body.about section.bottom a.first {
+    margin-right: 2.0833333333vw;
+  }
+  body.about section.bottom button {
+    margin-top: 1.875vw;
+  }
+
+  ul {
+    margin-top: 0.4166666667vw;
+    list-style: disc inside;
+  }
+}
+@media (min-width: 320px) and (max-width: 1025px) {
+  body {
+    height: -webkit-fill-available;
+  }
+
+  h1 {
+    font-size: 34px;
+    letter-spacing: 1.632px;
+    line-height: 39.55px;
+  }
+
+  body.contact h3, body.contact .right h2, section.offers .right h3 {
+    line-height: 32px;
+    font-size: 29px;
+    letter-spacing: 1.392px;
+    width: min-content;
+  }
+
+  section h2 {
+    line-height: 32px;
+    font-size: 29px;
+    letter-spacing: 1.392px;
+  }
+
+  header h2, .contact section h2 {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 1.056px;
+  }
+
+  h3 {
+    letter-spacing: 0.912px;
+    line-height: 25.33px;
+    font-size: 19px;
+  }
+
+  h4, body.contact h5 {
+    font-size: 19px;
+    letter-spacing: 0.912px;
+    line-height: 25.33px;
+  }
+
+  p, button span, .mailbox a {
+    font-size: 16px;
+    letter-spacing: 0.256px;
+    line-height: 24px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  #form-topic label span {
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  #form-time label span {
+    font-size: 16px;
+    padding-left: 8px;
+  }
+
+  body.offer header p, body.offers header p {
+    line-height: 25px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  ::-moz-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  :-moz-placeholder {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  input[type=text], input[type=email] {
+    font-size: 16px;
+    letter-spacing: 0.768px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  button.reg-btn {
+    padding: 16.5px 28.46px;
+    font-size: 14px;
+  }
+
+  .loader {
+    height: calc( 100vh - 52px );
+  }
+  .loader .logobox {
+    margin-top: 48px;
+  }
+  .loader svg.loader-woman {
+    right: -39%;
+    bottom: 10px;
+  }
+  .loader svg.loader-text-colored {
+    bottom: 30px;
+    left: 16px;
+  }
+
+  nav {
+    padding: 12.7px 16px;
+  }
+  nav .burger {
+    flex-direction: column;
+    position: relative;
+    bottom: 4px;
+  }
+  nav .burger span {
+    background-color: #EDD8C4;
+    height: 1px;
+    display: block;
+    border-radius: 5px;
+  }
+  nav .burger span.first {
+    margin-bottom: 5px;
+    width: 22px;
+  }
+  nav .burger span.second {
+    width: 14px;
+    align-self: flex-end;
+  }
+  nav a.logo {
+    width: 35.52%;
+  }
+  nav a.logo svg {
+    height: auto;
+  }
+  nav a.logo svg.logo-circle {
+    margin-right: 8px;
+    transition: 0.5s ease;
+    transform-origin: center;
+    transform: rotate(0);
+  }
+
+  nav.global {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: 0.36s ease;
+  }
+
+  nav.global.on {
+    transform: translateY(0);
+  }
+
+  #LOGOTYP {
+    fill: black;
+  }
+
+  .menubox {
+    height: calc( 100vh - 52px );
+  }
+
+  header {
+    height: calc(100vh - 52px);
+  }
+  header main {
+    padding-left: 16px;
+    justify-content: flex-end;
+  }
+  header main p {
+    margin-top: 20px;
+    width: 100%;
+  }
+  header main h2 {
+    position: relative;
+    bottom: 5px;
+    width: 102%;
+  }
+  header main h2::after {
+    height: 9px;
+    left: -5%;
+    width: calc(100% + 20.65px);
+    bottom: 10px;
+  }
+  header main .slide {
+    width: 100%;
+  }
+  header main .slide .container img {
+    width: 97%;
+    height: auto;
+  }
+  header main .slide .wrapper {
+    width: 100%;
+    padding: 25px 16px 0;
+  }
+  header main .slide .wrapper h1 {
+    position: relative;
+  }
+  header main .slide .wrapper button {
+    margin-top: 26px;
+  }
+  header main .reg-btn {
+    padding: 11px 16.04px;
+  }
+  header main .rotated {
+    color: white;
+    font-size: 22px;
+    line-height: 28.82px;
+    letter-spacing: 1.056px;
+    transform: rotate(-90deg);
+    position: relative;
+    bottom: 10%;
+    left: -10%;
+    width: min-content;
+  }
+  header main .slider-nav {
+    align-self: flex-end;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header main .slider-nav p.counter {
+    font-size: 29px;
+    letter-spacing: 1.392px;
+    position: relative;
+    z-index: 1;
+    bottom: 4px;
+  }
+  header main .slider-nav p.counter::after {
+    height: 9px;
+    left: -15%;
+    width: 93%;
+    bottom: 10%;
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: white;
+    z-index: -1;
+  }
+  header main .slider-nav p.counter span {
+    display: inline-block;
+  }
+  header main .slider-nav .slider-nav__btns button {
+    margin-right: 10.5px;
+    pointer-events: none;
+  }
+  header main .slider-nav .slider-nav__btns button circle {
+    fill: rgba(255, 255, 255, 0);
+    transition: 0.36s ease;
+    transition-delay: -0.36s;
+  }
+  header main .slider-nav .slider-nav__btns button.on circle {
+    fill: white;
+    transition-delay: 0.27s;
+  }
+  header main .slider-nav .black {
+    background-color: black;
+  }
+  header main .slider-nav .transparent {
+    margin-left: 5px;
+  }
+  header main .slider-nav .btnbox button {
+    padding: 11px 10.5px;
+  }
+
+  section {
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding: 0 16px;
+    flex-direction: column;
+  }
+  section h3 {
+    margin-top: 10px;
+  }
+  section p {
+    margin-top: 24px;
+  }
+  section .photobox {
+    height: 272.56px;
+    width: 306.63px;
+  }
+  section img {
+    width: auto;
+    bottom: -7.5%;
+    left: -17px;
+  }
+  section a {
+    margin-top: 33px;
+  }
+  section .right {
+    align-self: center;
+  }
+  section .right .photobox::after {
+    left: -6.5%;
+  }
+  section h2 span.reg::after {
+    left: -28.5%;
+    width: calc( 126% + 8px);
+  }
+
+  section.normal {
+    padding-bottom: 25px;
+  }
+  section.normal p {
+    width: 90%;
+  }
+  section.normal .left, section.normal .right {
+    margin-bottom: 50px;
+  }
+  section.normal .left .wrapper, section.normal .right .wrapper {
+    margin-left: 21px;
+  }
+
+  section.reverse .left {
+    order: 2;
+  }
+  section.reverse .right {
+    padding-left: 18px;
+  }
+
+  section.about {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  section.about div.right {
+    width: auto;
+  }
+  section.about div.left {
+    flex-direction: column;
+  }
+
+  section.pico-sure {
+    padding-top: 0;
+  }
+
+  section.hybrid .left {
+    align-items: center;
+    align-self: center;
+  }
+
+  section.changes h2 {
+    width: auto;
+  }
+
+  section.fat {
+    padding-bottom: 0;
+  }
+
+  section.light {
+    padding-top: 0;
+    padding-bottom: 36px;
+  }
+  section.light h2 {
+    width: auto;
+    margin-bottom: 8px;
+  }
+  section.light .right .wrapper h4 {
+    margin-bottom: 24px;
+  }
+  section.light .svgbox {
+    position: relative;
+    margin-bottom: 24px;
+  }
+  section.light .svgbox svg.clinic {
+    width: 72.09%;
+    height: auto;
+  }
+  section.light .svgbox svg.woman {
+    position: relative;
+    bottom: 5px;
+    width: 89.805%;
+    height: auto;
+  }
+  section.light .svgbox svg.woman path {
+    stroke-width: 3px;
+  }
+  section.light .svgbox h3 {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    right: -23%;
+    top: 25%;
+  }
+  section.light a {
+    margin-top: 56px;
+  }
+
+  section.contact {
+    padding: 0 16px 48px 37px;
+    overflow: hidden;
+  }
+  section.contact h2 {
+    width: auto;
+  }
+  section.contact .left p {
+    margin-bottom: 40px;
+  }
+  section.contact .right svg {
+    left: 7%;
+    width: 88%;
+    height: auto;
+    bottom: 24%;
+  }
+  section.contact .right .wrapper h5 {
+    font-size: 29px;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
+  section.contact .right .wrapper p {
+    margin: 8px 0 16px;
+  }
+  section.contact a {
+    margin-top: 32px;
+    width: max-content;
+  }
+  section.contact a button {
+    margin: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 48px 24px 32px 16px;
+  }
+  footer h5 {
+    font-size: 19px;
+    letter-spacing: 0.912px;
+    line-height: 25.33px;
+    margin-bottom: 8px;
+  }
+  footer p, footer a {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.256px;
+    margin-bottom: 4px;
+  }
+  footer .wrapper {
+    flex-direction: column;
+  }
+  footer .wrapper a, footer .wrapper p {
+    align-items: center;
+  }
+  footer .wrapper a svg, footer .wrapper p svg {
+    margin-right: 16px;
+  }
+  footer .wrapper .left {
+    flex-direction: column;
+  }
+  footer .wrapper .right {
+    flex-direction: column;
+  }
+  footer .wrapper .flex .column {
+    margin-bottom: 80px;
+  }
+  footer .bottom a.flex {
+    flex-direction: column;
+    text-transform: uppercase;
+    align-items: flex-start;
+  }
+
+  body.subpage section {
+    padding: 0;
+  }
+  body.subpage section main {
+    width: 100%;
+    flex-direction: column;
+    padding: 19px 16px 48px;
+  }
+
+  body.contact section {
+    overflow: hidden;
+  }
+  body.contact h2, body.contact h3 {
+    width: auto;
+  }
+  body.contact .left {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  body.contact .left p.first-p {
+    margin-bottom: 40px;
+  }
+  body.contact .left .addressbox {
+    order: 1;
+    margin-top: 24px;
+  }
+  body.contact .left .addressbox p {
+    margin: 8px 0 0 0;
+  }
+  body.contact .left .mailbox {
+    order: 2;
+    margin-top: 24px;
+  }
+  body.contact .left .mailbox h5 {
+    margin: 0 0 8px 0;
+  }
+  body.contact .right p {
+    width: 90%;
+  }
+  body.contact .right .reg-btn {
+    margin-top: 32px;
+  }
+  body.contact li {
+    width: 120%;
+  }
+  body.contact .yesbox {
+    flex-direction: column;
+  }
+  body.contact .yesbox div {
+    width: 100%;
+  }
+  body.contact .yesbox .dropdown-time {
+    margin-top: 24px;
+  }
+  body.contact h2 span.reg::after {
+    left: -10.5%;
+    width: calc( 108% + 8px);
+  }
+
+  .inputbox input[type=radio] {
+    width: 24px;
+    height: 24px;
+  }
+  .inputbox i {
+    width: 24px;
+    height: 24px;
+  }
+  .inputbox i::before {
+    width: 13.54px;
+    height: 13.54px;
+  }
+  .inputbox p {
+    margin-left: 32px;
+  }
+
+  input {
+    padding: 0;
+  }
+
+  section.formcontainer .right .phonecall {
+    margin-top: 24px;
+  }
+  section.formcontainer .right .phonecall p {
+    margin-top: 0;
+  }
+  section.formcontainer .right .reg-btn {
+    margin-top: 48px;
+  }
+
+  .dropdown-topic svg.icon {
+    bottom: 20px;
+    left: 8px;
+  }
+  .dropdown-topic .dropdown-label-topic {
+    padding-left: 32px;
+  }
+
+  .dropdown-time svg.icon {
+    bottom: 20px;
+    left: 8px;
+  }
+  .dropdown-time .dropdown-label-time {
+    padding-left: 32px;
+  }
+
+  .dropdown-button {
+    padding: 16px 8px;
+    margin: 32px 0 0;
+  }
+  .dropdown-button span svg {
+    margin-right: 16px;
+  }
+
+  .dropdown-options {
+    max-height: 209px;
+  }
+  .dropdown-options .option label {
+    padding: 16px 0px;
+  }
+  .dropdown-options .option label svg {
+    margin-right: 16px;
+  }
+
+  .dropdown-arrow {
+    width: 13px;
+    height: 13px;
+    bottom: -5px;
+    left: -15px;
+    margin-top: 2px;
+  }
+  .dropdown-arrow:before, .dropdown-arrow:after {
+    width: 10px;
+    height: 1px;
+  }
+  .dropdown-arrow:after {
+    top: -5px;
+    left: 5px;
+  }
+
+  .inputbox {
+    margin-right: 16px;
+  }
+  .inputbox p {
+    margin: 0 0 0 32px;
+  }
+
+  .dropdown-box {
+    margin-top: 24px;
+  }
+
+  .input-wrapper {
+    padding: 16px 8px;
+  }
+  .input-wrapper svg {
+    margin-right: 16px;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .namebox {
+    margin-top: 24px;
+  }
+
+  .email-address {
+    position: relative;
+    top: 1px;
+  }
+
+  .msgbox .input-wrapper {
+    padding: 40px 0 14px 8px;
+  }
+  .msgbox svg {
+    margin-left: 4px;
+  }
+  .msgbox textarea {
+    height: 27px;
+  }
+
+  .errorbox, .succesbox {
+    padding: 0 16px;
+  }
+  .errorbox div, .succesbox div {
+    padding: 24px 16px;
+    width: auto;
+    top: 30%;
+  }
+  .errorbox div h4, .succesbox div h4 {
+    margin-bottom: 24px;
+  }
+  .errorbox div p, .succesbox div p {
+    margin-bottom: 40px;
+  }
+  .errorbox div button, .succesbox div button {
+    width: 70.445%;
+  }
+
+  body.prices section {
+    padding-bottom: 0;
+  }
+  body.prices section h3 {
+    margin-bottom: 32px;
+    margin-top: -2px;
+  }
+  body.prices section main {
+    padding: 27px 16px 336px;
+    overflow: hidden;
+  }
+  body.prices section main h2 {
+    width: auto;
+    flex-direction: column;
+  }
+  body.prices section main div.flex {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  body.prices section main div.flex div.price-wrapper {
+    margin-bottom: 32px;
+  }
+  body.prices section main div.flex div.price-wrapper p.about {
+    margin-bottom: 48px;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex {
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex p.price {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  body.prices section main div.flex div.price-wrapper div.flex div.column p {
+    margin-top: 0;
+  }
+  body.prices section main div.flex.third div.price-wrapper {
+    margin-bottom: 0;
+  }
+  body.prices section main svg.luna {
+    width: 89.885%;
+    bottom: -0.4%;
+    right: -3%;
+  }
+  body.prices section main svg.luna.visible path {
+    animation: luna 55s forwards;
+  }
+
+  body.offer header {
+    background-image: url("assets/images/offer/headermobile.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  body.offer header main {
+    width: 100%;
+    padding: 27px 16px 0;
+  }
+  body.offer header main p {
+    width: auto;
+  }
+  body.offer header a {
+    align-self: flex-end;
+  }
+  body.offer header a button {
+    background: black;
+    padding: 13.54px 15.3px;
+  }
+  body.offer section.pico-sure {
+    padding-top: 56px;
+  }
+  body.offer .nav-area {
+    top: -3.5%;
+    left: 0;
+  }
+
+  body.offers header {
+    background-color: #edecef;
+    background-repeat: no-repeat;
+    background-position-y: 150%;
+  }
+  body.offers header main {
+    width: 100%;
+    padding: 27px 16px 0;
+  }
+  body.offers header p {
+    width: auto;
+  }
+  body.offers header a {
+    align-self: flex-end;
+  }
+  body.offers header a button {
+    background: black;
+    padding: 13.54px 15.3px;
+  }
+  body.offers section.offers {
+    padding: 56px 0 0 16px;
+    position: relative;
+  }
+  body.offers section.offers .right {
+    align-self: unset;
+  }
+  body.offers section.offers .wrapper {
+    margin-left: 0;
+  }
+  body.offers section.offers .price-wrapper h3 {
+    margin-bottom: 32px;
+  }
+  body.offers section.offers .price-wrapper div.flex {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  body.offers section.offers .price-wrapper div.flex div.column {
+    margin-bottom: 0;
+  }
+  body.offers section.offers .price-wrapper p {
+    margin-top: 0;
+    width: auto;
+  }
+  body.offers section.offers .price-wrapper p.price {
+    margin-top: 8px;
+  }
+  body.offers section.offers .nav-area {
+    top: -1.5%;
+    left: 0;
+  }
+  body.offers section.offers h2 {
+    width: auto;
+  }
+  body.offers section.contact {
+    padding: 0 16px 48px 16px;
+  }
+  body.offers section.contact h2 {
+    margin-bottom: 8px;
+  }
+
+  body.picosure header {
+    background-image: url("assets/images/slider/bg_slider2_mobile.jpg");
+  }
+  body.picosure section .grey-bg {
+    background-image: url(assets/images/picosure/bg_offer_picosure1.png);
+  }
+
+  body.hybrid header {
+    background-image: url("assets/images/slider/bg_slider3_mobile.jpg");
+  }
+  body.hybrid section .grey-bg {
+    background-image: url(assets/images/img_offer_2_bg.png);
+  }
+  body.hybrid section .left {
+    align-self: unset;
+  }
+
+  body.makeup header {
+    background-image: url("assets/images/slider/bg_slider4_mobile.jpg");
+  }
+  body.makeup section .grey-bg {
+    background-image: url(assets/images/img_offer_3_bg.png);
+  }
+
+  body.screw header {
+    background-image: url("assets/images/slider/bg_slider5_mobile.jpg");
+  }
+  body.screw section .grey-bg {
+    background-image: url(assets/images/img_offer_4_bg.png);
+  }
+
+  body.changes header {
+    background-image: url("assets/images/slider/bg_slider6_mobile.jpg");
+  }
+  body.changes section .grey-bg {
+    background-image: url(assets/images/img_offer_5_bg.png);
+  }
+
+  body.moles header {
+    background-image: url("assets/images/slider/bg_slider7_mobile.jpg");
+  }
+  body.moles section .grey-bg {
+    background-image: url(assets/images/img_offer_6_bg.png);
+  }
+
+  body.fat header {
+    background-image: url("assets/images/slider/bg_slider8_mobile.jpg");
+  }
+  body.fat section .grey-bg {
+    background-image: url(assets/images/img_offer_6_bg.png);
+  }
+
+  body.about header main {
+    padding: 19px 16px 48px;
+  }
+  body.about header main svg {
+    right: -39.15%;
+    bottom: 1.5%;
+  }
+  body.about section h2 span::after {
+    left: -79.5%;
+    width: calc( 174% + 8px);
+  }
+  body.about section.s-1 {
+    padding-top: 80px;
+  }
+  body.about section.s-4 {
+    padding-bottom: 0;
+  }
+  body.about section.bottom {
+    padding: 0 0 40px 36px;
+  }
+  body.about section.bottom p {
+    width: 91%;
+    padding-right: 16px;
+  }
+  body.about section.bottom div {
+    padding-right: 36px;
+    margin-top: 30px;
+  }
+  body.about section.bottom div button {
+    width: 100%;
+    margin: 0;
+  }
+  body.about section.bottom div a.first button {
+    margin-bottom: 16px;
+  }
+
+  ul {
+    margin-top: 16px;
+    list-style: disc inside;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

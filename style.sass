@@ -1,0 +1,1157 @@
+// Root // 
+
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+    scroll-behavior: smooth
+
+html
+    overflow-x: hidden
+    overflow-y: hidden
+
+html.loaded
+    overflow-y: visible
+
+
+
+
+// Colors //
+
+
+$maincolor: #EDD8C4
+
+
+::-webkit-scrollbar 
+    background: white
+    width: 6px
+
+  
+::-webkit-scrollbar-thumb 
+      background: $maincolor
+
+
+
+.content
+    opacity: 0
+
+.loaded .content
+    opacity: 1
+
+
+// Loader //
+
+
+.loader
+    position: fixed
+    background-color: white
+    top: 0
+    left: 0
+    width: 100%
+    opacity: 0
+    transition: .8s ease
+    overflow: hidden
+    & .logobox
+        align-items: center
+        & .loader-text
+            margin-top: 16px
+        & svg
+            position: unset
+        & .loader-circle
+            animation: 4s linear infinite rotated
+            transform-origin: center
+    & svg.loader-text-colored
+        & path
+            fill: $maincolor
+            stroke: $maincolor
+        // & .loader-circle
+        //     transition: 1.6s ease
+        //     transform-origin: center
+        // & .first.loader-circle
+        //     transform: rotate(72deg)
+        // & .second.loader-circle
+        //     transform: rotate(144deg)
+        // & .third.loader-circle
+        //     transform: rotate(216deg)
+        // & .fourth.loader-circle
+        //     transform: rotate(288deg)
+        // & .fifth.loader-circle
+        //     transform: rotate(360deg)
+    & svg
+        position: absolute
+
+.loader.first
+    opacity: 1
+
+.loaded .loader
+    z-index: -1
+    opacity: 0
+
+html.loaded 
+    & nav
+        opacity: 1
+
+
+@keyframes rotated
+
+    to
+        
+        transform: rotate(360deg)
+
+
+
+
+// Fonts //
+
+
+
+$opensans-font-path: "assets/fonts"
+
+
+@font-face 
+    font-family: 'Jost SemiBold'
+    src: url("#{$opensans-font-path}/Jost-SemiBold.ttf")
+
+@font-face 
+    font-family: 'OpenSans Regular'
+    src: url("#{$opensans-font-path}/OpenSans-Regular.ttf")
+
+@font-face 
+    font-family: 'OpenSans Bold'
+    src: url("#{$opensans-font-path}/OpenSans-Bold.ttf")
+
+
+h1,h2, h2 span,h3,h4,h5, .counter, .counter span, a, button, button span, label span, input[type="text"], input[type="email"], p.option-p, textarea
+    font-family: 'Jost SemiBold'
+    font-weight: 400
+    margin: 0
+
+h1,h2,h3,h4,h5
+        text-transform: uppercase
+
+footer a,p,span, .contact main a, ul li
+    font-family: 'OpenSans Regular'
+    font-weight: 400
+    margin: 0
+
+nav a:hover
+    color: $maincolor
+    transition: .34s ease
+
+
+
+::-webkit-input-placeholder
+    font-family: 'Jost SemiBold'
+    font-weight: 400
+    color: black
+
+::-moz-placeholder
+    font-family: 'Jost SemiBold'
+    font-weight: 400
+    color: black
+
+
+:-ms-input-placeholder
+    font-family: 'Jost SemiBold'
+    font-weight: 400
+    color: black
+
+
+:-moz-placeholder
+    font-family: 'Jost SemiBold'
+    font-weight: 400
+    color: black
+
+input[type="text"]
+    text-transform: uppercase
+
+
+
+
+
+.bold
+    font-family: 'OpenSans Bold'
+    font-weight: 400
+
+.colored-bg
+    background-color: $maincolor
+
+.colored-f
+    color: $maincolor
+
+
+// General //
+
+.flex
+    display: flex
+
+.column
+    flex-direction: column
+
+a
+    text-decoration: none
+    color: black
+    z-index: 4
+
+section a
+    width: max-content
+
+ul 
+    list-style: none
+    padding: 0
+
+header, section
+    width: 100%
+    // overflow-x: hidden
+
+section
+    justify-content: space-between
+    position: relative
+    & div
+        background-size: cover
+    & h2
+        position: relative
+        & span.reg
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                height: 24.62%
+                bottom: 26%
+                background-color: $maincolor
+                z-index: -1
+    & p
+        margin-top: 32px
+    & .photobox
+        position: relative
+        // background-color: #FBFBFB
+        width: 100%
+        & div
+            width: 0%
+            height: inherit
+            transition: .36s ease
+            position: absolute
+            top: 0
+            left: 0
+            right: unset
+            transform-origin: right
+        & .colored-bg
+            background-color: $maincolor
+        &::after
+            content: ''
+            position: absolute
+            border: 1px solid $maincolor
+            width: 100%
+            height: 100%
+            bottom: -7.5%
+            z-index: -1
+    & img
+        position: absolute
+        bottom: -7.5%
+    & img.other
+        bottom: -8%
+    & .left
+        position: relative
+        // width: 45.556%
+        & img
+            left: 0
+        & .photobox
+            &::after
+                right: -7.5%
+    & .right
+        position: relative
+        // width: 45%
+        & .photobox
+            &::after
+                // left: -7.5%
+        // & img
+        //     right: 0
+    & .nav-area
+        width: 100%
+        height: 10px
+        position: absolute
+
+section.reverse
+    & .photobox
+        & div
+            right: 0
+            left: unset
+            transform-origin: right
+
+
+section.visible
+    & .photobox
+        & div
+            width: 100%
+        & .grey-bg
+            transition-delay: .36s
+
+
+
+// Buttons //
+
+button 
+    background-color: transparent
+    border: none
+    cursor: pointer
+    text-transform: uppercase
+    padding: 0
+    z-index: 3
+
+.reg-btn
+    border: 1px solid
+    border-color: black
+    color: black
+    transition: .36s ease
+
+a:hover .reg-btn, .reg-btn:hover
+    border-color: $maincolor
+
+
+.burger
+    // overflow: hidden
+    & span
+        transition: .34s ease
+        transform-origin: center
+
+.burger.open
+    & span.first
+        width: 19px
+        transform: rotate(-45deg) translateY(4px)
+    & span.second
+        width: 19px
+        transform: rotate(45deg) translateY(-4px)
+    
+
+
+
+// Nav // 
+
+nav 
+    background-color: white
+    justify-content: space-between
+    width: 100%
+    height: min-content
+    align-items: center
+    opacity: 0
+    transition: .36s ease
+    z-index: 6
+    // & .linkbox
+    //     align-items: center
+    & a
+        color: black
+        text-transform: uppercase
+    & #Elipsa_1, #Elipsa_2
+        fill: white
+
+
+.menubox
+    position: fixed
+    width: 100%
+    background-color: white
+    left: 0
+    top: 0
+    padding: 68px 14px 0
+    padding: 18.75% 14px 0
+    box-sizing: content-box
+    transition: .3s ease-in
+    display: none
+    opacity: 0
+    z-index: 5
+    box-sizing: border-box
+    & a
+        color: black
+        font-size: 19px
+        line-height: 44px
+        letter-spacing: 0.912px
+        text-transform: uppercase
+    & svg
+        position: absolute
+        right: -39.15%
+        bottom: 1.5%
+    
+
+
+// Header // 
+
+header
+    background-color: #F4F4F4
+    position: relative
+    overflow: hidden
+    & main
+        position: relative
+        height: 100%
+        background-size: cover
+        overflow: hidden
+        & div.slide
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 100%
+            width: 100%
+            opacity: 0
+            transition: opacity 1.04s ease
+            pointer-events: none
+            & p, a
+                position: relative
+        & div.slide.on
+            opacity: 1
+            pointer-events: auto
+        & div.container
+            position: absolute
+            bottom: 0
+            right: -4%
+            z-index: 0
+            height: 100%
+            width: 104%
+            overflow: hidden
+            background-position: center
+            & img
+                position: absolute
+                bottom: 0
+                // right: 0
+                height: inherit
+        & .slider-nav__btns
+            display: flex
+            & button
+                position: relative
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                & svg.circle
+                    position: absolute
+                    transform: rotate(270deg)
+                    height: 16px
+                    width: 16px
+                    & circle
+                        stroke-dasharray: 100
+                        stroke-dashoffset: -100
+                & div.square
+                    width: 11.32px
+                    height: 11.32px
+                    border-color: white
+                    transform: rotate(45deg)
+                    border-radius: 0
+                    background-color: black
+            & button.on 
+                // & div.square
+                //         animation: fill, squared, rotate
+                //         animation-duration: .74s, 1.25s, 1.25s
+                //         animation-fill-mode: forwards, forwards, forwards
+                //         animation-delay: 2s, 2.5s, 3.8s
+                //         background-color: transparent
+                //         transform: rotate(0)
+                //         border-radius: 100%
+                & div
+                    // animation:  fill, squared, rotate
+                    // animation-duration: .2s, .95s, .95s
+                    // animation-fill-mode: forwards, forwards, forwards
+                    // animation-delay: 5s, 5s, 5s
+                    // background-color: transparent
+                    // transform: rotate(45deg)
+                    // border-radius: 100%
+                    animation:  unrotate,unsquared, unfill, fill, squared, rotate
+                    animation-duration: 1.2s , 1.7s ,.6s, .4s, 1.2s, 1.2s
+                    animation-fill-mode: forwards, forwards, forwards, forwards, forwards, forwards
+                    animation-delay: 0s, 0s, .15s ,5s, 4.8s, 5s
+                    background-color: black
+                    transform: rotate(45deg)
+                    border-radius: 0
+                & .circle
+                    & circle
+                        animation: circleLoader, opacity
+                        animation-duration: 4.3s, 0s
+                        animation-fill-mode: forwards, forwards
+                        animation-delay: 0s, 5s
+            // & button.next
+            //     & div
+            //         animation: unrotate, unsquared, unfill
+            //         animation-duration: 3.5s, 3.5s, .5s
+            //         animation-fill-mode: forwards, forwards, forwards
+            //         animation-delay: .8s, .8s, 2.5s
+            //         background-color: black
+            //         transform: rotate(45deg)
+            //         border-radius: 0
+                // & .circle
+                //     & circle
+                //         animation: circleLoader, opacity
+                //         animation-duration: 2.5s, .2s
+                //         animation-fill-mode: forwards, forwards
+                //         animation-delay: 5s, 2.5s
+        & .wrapper
+            z-index: 1
+        & h2
+            position: relative
+            z-index: 1
+            display: inline-block
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                bottom: 26%
+                background: white
+                z-index: -1
+        // & .colorspan
+        //     background: white
+        //     display: block
+        //     position: absolute
+        //     left: 0
+        //     bottom: 50%
+        //     height: 1.65%
+        //     width: 45.105%
+
+    & .header-svg
+        position: absolute
+        bottom: -1%
+        left: 0
+        right: 0
+        margin: auto
+        width: 100vw
+    & .slider-nav__btns
+        z-index: 3
+
+    div.btnbox
+        & button
+            &:hover
+                border-color: white
+
+
+@keyframes circleLoader
+
+    0%
+        stroke-dashoffset: -100
+    100%
+        stroke-dashoffset: -150
+
+@keyframes opacity
+
+    0% 
+        opacity: 1
+    100%
+        opacity: 0
+
+@keyframes fill
+
+    0% 
+        background-color: transparent
+    100%
+        background-color: black
+
+
+@keyframes unfill
+
+    0% 
+        background-color: black
+    100%
+        background-color: transparent
+
+
+@keyframes rotate
+
+    0% 
+        transform: rotate(0)
+    100%
+        transform: rotate(45deg)
+
+
+@keyframes unrotate
+
+    0% 
+        transform: rotate(45deg)
+    100%
+        transform: rotate(90deg)
+
+@keyframes squared
+
+    0% 
+        border-radius: 100%
+    100%
+        border-radius: 0
+
+
+@keyframes unsquared
+
+    0% 
+        border-radius: 0
+    100%
+        border-radius: 100%
+
+
+
+    
+// About //
+
+section.about
+    // padding-right: 21.75%
+    justify-content: space-between
+    & div.right
+        width: 40%
+    & div.left
+        width: max-content
+    & h2
+        &::after
+            display: none
+    // & p
+    //     margin-top: 0
+
+
+
+// Pico Sure //
+
+
+section.pico-sure
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_1_bg.png')
+
+    
+
+// Hybrid //
+
+section.hybrid
+    overflow: visible
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_2_bg.png')
+
+
+// Makeup //
+
+section.makeup
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_3_bg.png')
+
+
+// Screw //
+
+section.screw
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_4_bg.png')
+
+
+// Changes //
+
+section.changes
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_5_bg.png')
+
+        
+// Moles //
+
+section.moles
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_6_bg.png')
+
+
+// Moles //
+
+section.fat
+    & .photobox
+        & .grey-bg
+            background-image: url('assets/images/img_offer_7_bg.png')
+
+
+// Light // 
+
+section.light
+    overflow: visible
+    position: relative
+    & svg.woman
+        & path
+            stroke: #edd8c4
+            stroke-dasharray: 15000
+            stroke-dashoffset: 15000
+    & svg.woman.visible
+        & path
+            animation: woman 34s forwards
+    & .left
+        position: relative
+        & h3
+            color: $maincolor
+    & .right
+        // width: 48%
+        justify-content: center
+        & .wrapper
+            // width: 77%
+            & h2
+                &::after
+                    display: none
+    & .svgbox
+        position: relative
+        // width: 100%
+        // left: -30px
+        & svg.clinic
+            // position: absolute
+            // width: 100%
+            & .cls-1
+                fill: #edd8c4
+            & .cls-1, .cls-2
+                stroke: #edd8c4
+            & .cls-2
+                fill: #fff
+        // & svg.clinic
+            // width: 55%
+
+
+@keyframes woman
+
+    0%
+       stroke-dashoffset: 15000
+    100%
+        stroke-dashoffset: 30000 
+
+// Contact //
+
+
+section.contact
+    position: relative
+    & .left
+        // justify-content: center
+        // align-items: center
+        & .wrapper
+            // width: 62%
+    & .right
+        // width: 50%
+        justify-content: center
+        // align-items: center
+        & svg
+            position: absolute
+            left: 0
+            z-index: -1
+            width: inherit
+            transition: .5s ease
+        & .wrapper
+            // width: 67%
+            & p
+                margin: 0
+
+
+
+// Footer //
+
+footer
+    background: $maincolor
+    & .wrapper
+        width: 100%
+        justify-content: space-between
+        & .left,.right
+            & div
+                & a
+                    width: max-content
+                    align-items: center
+                    position: relative
+                    &::after
+                        content: ''
+                        position: absolute
+                        width: 0
+                        color: black
+                        bottom: 0
+                        left: 0
+                        transition: .34s ease
+                        background-color: black
+                        height: 1px
+                    &:hover
+                        &::after
+                            width: 100%
+                & a.insta
+                    & circle.colored
+                        fill: $maincolor
+            & .last
+                margin-right: 0
+    & .bottom
+        width: 102%
+        justify-content: space-between
+        & a
+            align-items: center
+
+
+
+
+// SUBPAGES // 
+
+
+.subpage
+    & header
+        height: auto
+
+
+
+
+
+///////  CONTACT ////////
+
+
+
+.contact
+    & section
+        & main
+            width: 100%
+        & img
+            position: unset
+        & label span
+            display: flex
+            align-items: center
+            text-transform: uppercase
+
+
+// Form //
+
+
+$border: 1px solid #000
+
+
+// Drop Down Topic
+
+.dropdown-topic
+  position: relative
+  z-index: 1
+ul 
+  margin: 0
+  padding: 0
+
+input[type="radio"]
+    opacity: 0
+
+
+.inputbox
+    position: relative
+    & input[type="radio"]
+        position: absolute
+        opacity: 0
+        cursor: pointer
+        margin: 0
+        z-index: 2
+    & i
+        position: absolute
+        border-radius: 50%
+        border: 1px solid
+        border-color: black
+        display: flex
+        align-items: center
+        place-content: center
+        transition: .34s ease
+        & svg
+            opacity: 0
+            width: 100%
+    & input[type="radio"]:checked ~ i
+        & svg
+            opacity: 1
+    
+.inputbox:hover
+    & i
+        border-color: $maincolor
+
+        
+
+  
+section.formcontainer 
+    & button:not(.reg-btn)
+        width: 100%
+        display: flex
+        align-items: center
+    & .right
+        & .phonecall
+            justify-content: space-between
+            & div
+                text-transform: uppercase
+                align-items: center
+        & .yesbox, .nobox
+            width: 100%
+            justify-content: space-between
+        & .yesbox
+            display: flex
+        & .nobox
+            display: none
+            & .email-address
+                width: 100%
+        & .reg-btn
+            width: fit-content
+       
+  
+.is-open 
+    & .dropdown-form 
+        display: block
+        z-index: 4
+    & .dropdown-arrow
+        transform: rotate(45deg) translate(-5px, -5px)
+        &:before
+            transform: translate(10px, 0)
+        &:after
+            transform: rotate(90deg) translate(10px, 0)
+    
+.dropdown-button
+    width: 100%
+    justify-content: space-between
+    border-bottom: 1px solid
+    border-bottom-color: black
+    transition: .36s ease
+    &:hover
+        border-bottom-color: $maincolor
+
+.dropdown-label
+    width: 100%
+    margin-bottom: 0
+
+.dropdown-form
+  position: absolute
+  display: none
+  width: 100%
+  background-color: white
+  transition: 0.3s ease-in-out
+
+
+.dropdown-options 
+  position: relative
+  overflow-x: hidden
+  overflow-y: scroll
+
+  & .option 
+    text-align: center
+    cursor: pointer
+    display: flex
+    align-items: center
+    transition: 0.36s ease
+    border-bottom: 1px solid $maincolor
+
+    
+    & label 
+        display: flex
+        width: 100%
+        text-transform: none
+        cursor: pointer
+        & input
+            position: absolute
+    
+  
+
+
+.dropdown-arrow 
+  display: inline-block
+  position: relative
+  transition: 0.3s ease
+  text-align: left
+  transform: rotate(45deg)
+  float: right
+
+  &:before,
+  &:after
+    position: absolute
+    content: ""
+    display: inline-block
+    background-color: black
+    transition: 0.3s ease
+  
+  &:after 
+    position: absolute
+    transform: rotate(90deg)
+
+
+// Yes & No // 
+
+.inputbox
+    margin-right: 16px
+
+
+
+
+// Text Inputs //
+
+
+.dropdown-box
+    position: relative
+    justify-content: space-between
+    & .phone-number
+        width: 58.63%
+    & .dropdown-time
+        width: 38.04%
+        & button
+            margin: 0 
+            width: 100%
+            height: 100%
+
+
+.input-wrapper
+    border-bottom: 1px solid
+    border-bottom-color: black
+    transition: .36s ease
+    & input
+        border: none
+        outline: none
+        width: 100%
+.input-wrapper:hover
+    border-bottom-color: $maincolor
+
+
+iframe
+    display: none
+
+
+
+.dropdown-topic
+    position: relative
+    & svg.icon
+        position: absolute
+
+.dropdown-time
+    position: relative
+    & svg.icon
+        position: absolute
+
+
+
+
+
+.msgbox
+    display: none
+    & .input-wrapper
+        position: relative
+        & textarea
+            border: none
+            outline: none
+            position: relative
+            resize: none
+            background: none
+            &::placeholder
+                position: relative
+                bottom: 1px
+
+     
+  
+
+
+
+// Validation //
+
+.errorbox, .succesbox
+    position: fixed
+    width: 100vw
+    height: 100vh
+    left: 0
+    top: 0
+    justify-content: center
+    align-items: center
+    display: none
+    transition: .36s ease
+    z-index: 10
+    & div
+        background-color: white
+        left: 0
+        right: 0
+        margin: auto
+        text-align: center
+        transition: .36s ease
+
+.errorbox.active, .succesbox.active
+    display: flex
+
+.errorbox
+    background-color: rgba(237, 216, 196, .4)
+
+.succesbox
+    background-color: rgba(255,255,255, 0.8)
+    & div
+        border: 1px solid black
+
+
+div.email-address.error, div.phone-number.error, div.namebox.error, div.msgbox.error
+    & .input-wrapper
+        border-bottom-color: #EB6969
+
+div.dropdown-topic.error, div.dropdown-time.error
+    & button
+        border-bottom-color: #EB6969
+
+
+
+
+
+
+// Prices //
+
+
+
+body.prices
+    & .logo
+        & path.text
+            fill: black
+    & section
+        & main
+            width: 100%
+            justify-content: space-between
+            position: relative
+            & div.flex
+                justify-content: space-between
+                & div.price-wrapper
+                    & div.flex
+                        width: 100%
+                        justify-content: space-between
+                        & p.price
+                            text-transform: uppercase
+                        & div.column
+                            margin-bottom: 0
+            & svg.luna
+                position: absolute
+                z-index: -1
+                height: auto
+                & path
+                    stroke-dasharray: 11360
+                    stroke-dashoffset: 11360
+
+@keyframes luna
+
+    to 
+         stroke-dashoffset: 22720
+
+
+
+
+// Offers // 
+
+
+body.offers
+    & section.offers
+        position: relative
+
+
+
+body.about
+    & header
+        background-color: unset
+        & main
+            & svg
+                position: absolute
+    & section
+        & .photobox
+            & .colored-bg
+                width: 100%
+    & section.s-1
+        & .colored-bg
+            background-image: url('assets/images/about/1.png')
+    & section.s-2
+        & .colored-bg
+            background-image: url('assets/images/about/2.png')
+    & section.s-3
+        & .colored-bg
+            background-image: url('assets/images/about/3.png')
+    & section.s-4
+        & .colored-bg
+            background-image: url('assets/images/about/4.jpg')
+
+
+
+
+span.sub
+    position: relative
+    margin-right: 5px
+    & sub
+        position: absolute
+        bottom: -8px
+        right: -8px

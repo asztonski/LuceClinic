@@ -1,0 +1,2659 @@
+// Breakpoints //
+
+$breakpoint-phone: 320px
+$breakpoint-tablet: 768px
+$breakpoint-desktopSmall: 1025px
+$breakpoint-desktop: 1550px
+
+
+$maincolor: #EDD8C4
+   
+
+
+@media (min-width: $breakpoint-desktop)
+
+    // Fonts //
+    
+    h1
+        font-size: 80px
+        letter-spacing: 2.304px
+        line-height: 88px
+
+    section h2
+        line-height: 54px
+        font-size: 48px
+        letter-spacing: 2.304px
+    
+    header h2, .offers .price-wrapper h3
+        font-size: 32px
+        letter-spacing: 1.536px
+        line-height: 44.33px
+
+    h3, body.contact .left h2
+        letter-spacing: 1.056px
+        line-height: 44.33px
+        font-size: 32px
+
+    h4, body.contact h5, p.price 
+        font-size: 22px
+        letter-spacing: 1.056px
+        line-height: 44.33px
+
+    p, ul li
+        font-size: 18px
+        letter-spacing: 0.288px
+        line-height: 26px
+    
+    a, button span, p.option-p
+        font-size: 16px
+
+    p.price
+        font-family: "Jost SemiBold"
+        font-weight: 400
+        margin: 0
+
+
+
+
+
+    ::-webkit-input-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+
+    ::-moz-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+    
+    :-ms-input-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+    
+    :-moz-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+
+    input[type="text"], input[type="email"], textarea
+        font-size: 16px
+        letter-spacing: 0.768px
+
+    // General //
+
+    .mobile
+        display: none
+
+    section
+        padding: 0 181px
+
+    button.reg-btn
+        padding: 20px 49px
+        font-size: 16px
+
+    // Loader //
+
+
+    .menuBox
+        height: 100vh
+
+
+    div.loader
+        height: 100vh
+        display: flex
+        justify-content: center
+        & .logobox
+            padding-top: 128px
+        & svg.loader-text-colored
+            left: 0
+            top: 40%
+            left: 16px
+        & svg.loader-woman
+            bottom: 0
+            width: 35%
+            height: auto
+
+    
+    // Nav //
+
+    nav 
+        padding: 32.5px 190px
+        & a.link
+            margin-right: 48px
+        & a.icon
+            margin-left: 8px
+            line-height: unset
+
+        
+    // Header //
+
+    header
+        height: 100vh
+        & main
+            padding-left: 190px
+            // justify-content: center
+            background-position: 26%
+            & div.wrapper
+                margin: 152px 0 0 190px
+                width: max-content
+            & h1
+                position: relative
+            & h2
+                &::after
+                    width: calc( 135.9% + 16px )
+                    height: 36.1%
+                    left: -36%
+            & p 
+                margin-top: 32px
+            & .reg-btn
+                margin-top: 39px
+            & .slider-nav
+                margin-top: 624px
+                align-items: flex-end
+                width: 20.35%
+                justify-content: space-between
+                & p
+                    font-size: 46px
+                    width: auto
+                    line-height: 34.75px
+                    margin: 0
+                    position: relative
+                    z-index: 1
+                    top: 4px
+                    &::after
+                        content: ''
+                        display: block
+                        background: white
+                        position: absolute
+                        height: 46%
+                        width: 146px
+                        bottom: 2px
+                        left: -20%
+                        z-index: -1
+                & button
+                    margin-right: 13px
+
+    section
+        padding-top: 92px
+        padding-bottom: 92px
+        position: relative
+        & .photobox
+            height: 624px
+        & h2
+            & span.reg
+                &::after
+                    left: -2.5%
+                    width: calc( 100.5% + 16px)
+        & .nav-area
+            top: 0
+            left: 0
+    
+
+    section.normal
+        align-items: center
+        & .right
+            width: 50%
+            align-items: center
+            justify-content: center
+            & .wrapper
+                width: 70%
+            & .photobox
+                &::after
+                    left: -7.5%
+        & .left
+            width: 45.556%
+            align-items: center
+            justify-content: center
+            position: relative
+            & .wrapper
+                width: 67%
+            & .photobox
+                &::after
+                    right: -7.5%
+        & img
+            right: 0
+
+    section.reverse
+        & .right
+            width: 45%
+        & .left
+            width: 50%
+            
+
+
+    
+    
+    section.about
+        padding-top: 88px
+        padding-bottom: 112px
+        padding-right: 21.75%
+        // align-items: flex-end
+        & div.right
+            width: 40%
+        & p
+            margin-top: 0
+
+    
+
+
+    section.pico-sure
+        padding-top: 0
+        & .right
+            width: 50%
+            align-items: center
+            justify-content: center
+            & .wrapper
+                width: 70%
+                margin-top: 32px
+                margin-left: 24px
+                & h2
+                    padding-left: 8px
+                & button
+                    margin-top: 39px
+            // & .right
+    
+    
+    
+    
+    section.hybrid
+        & .left
+            align-items: center
+            align-self: center
+            & .wrapper
+                width: 67%
+                margin-top: 32px
+                & h2
+                    padding-left: 8px
+                & button
+                    margin-top: 40px
+        & .right
+            width: 45%
+
+    body.index section.hybrid
+        & .left
+            width: 50%
+    
+    
+    section.makeup
+        & .right
+            & .wrapper
+                margin-top: 32px
+                & h2
+                    padding-left: 8px
+                & button
+                    margin-top: 39px
+    
+    
+    
+    section.screw
+        & .left
+            & .wrapper
+                margin-top: 32px
+                & h2
+                    padding-left: 8px
+                & button
+                    margin-top: 40px
+    
+                
+    
+    section.changes
+        & .right
+            & .wrapper
+                margin-top: 32px
+                & h2
+                    padding-left: 8px
+                & button
+                    margin-top: 39px
+         
+    
+    
+    section.moles
+        & .wrapper
+            margin-top: 32px
+            & h2
+                padding-left: 8px
+            & button
+                margin-top: 39px
+
+
+    section.fat
+        & .wrapper
+            margin-top: 32px
+            & h2
+                padding-left: 8px
+            & button
+                margin-top: 39px
+        & .right
+            & .wrapper
+                width: 67%
+    
+
+    
+    section.light
+        padding-top: 168px
+        padding-bottom: 92px
+        & h3
+            margin-top: 30px
+        & .right
+            width: 48%
+            & .wrapper
+                width: 77%
+                & button
+                    margin-top: 40px
+                & h4
+                    margin-top: 8px
+                & p
+                    margin-top: 39px
+        & svg.clinic
+            left: 20.5%
+            bottom: 4.1%
+        & .left
+            width: 45.556%
+        & .svgbox
+            width: 100%
+        & svg.woman
+            position: absolute
+            bottom: -18.7%
+            left: 1.6%
+            & path
+                stroke-width: 1px
+    
+    
+    
+    section.contact
+        padding-top: 304px
+        padding-bottom: 256px
+        & .left
+            // justify-content: center
+            align-items: center
+            width: 45.556%
+            & .wrapper
+                width: 64%
+                & button
+                    margin-top: 39px
+        & .right
+            width: 50%
+            justify-content: center
+            align-items: center
+            & .wrapper
+                width: 67%
+                margin-top: 4px
+                & h5
+                    font-size: 48px
+                    line-height: 54px
+                    margin-bottom: 24px
+                    letter-spacing: 2.304px
+                    position: relative
+                    bottom: 5px
+                & .email
+                    margin-top: 8px
+    
+    
+    
+    footer
+        padding: 90px 192px 32px
+        & .wrapper
+            width: 100%
+            margin-bottom: 79px
+            justify-content: space-between
+            & .left,.right
+                & div
+                    margin-right: 88px
+                    & h5
+                        font-size: 22px
+                        margin-bottom: 16px
+                    & a
+                        line-height: 32px
+                        width: max-content
+                        align-items: center
+                        font-size: 18px
+                        & svg
+                            margin-right: 16px
+                    & a.flex
+                        margin-bottom: 8px
+                    & p.phone
+                        margin-top: 40px
+                        margin-bottom: 8px
+                        position: relative
+                        line-height: 32px
+                        align-items: center
+                        & svg
+                            margin-right: 16px
+                & .last
+                    margin-right: 0
+        & .bottom
+            & svg
+                margin-left: 16px
+
+
+
+
+
+
+
+        
+
+    // CONTACT //
+
+
+    body.contact
+        & section
+            padding: 72px 0 0
+        & main
+            width: 100%
+            padding: 0 320px 136px 184px
+            justify-content: space-between
+        & .right
+            width: 36.171%
+        & label span
+            font-size: 14px
+            letter-spacing: 0.672px
+            line-height: 44.33px
+            & svg
+                    margin-right: 16px
+        & h2
+            margin-bottom: 32px
+        & h3
+            font-size: 48px
+            line-height: 54px
+            letter-spacing: 2.304px
+        & .first-p
+            margin-bottom: 56px
+        & h3
+            margin-bottom: 24px
+        & p
+            margin-top: 0
+        & h5.address
+             margin-top: 32px
+             
+
+
+
+
+
+    // Form //
+
+
+    $border: 1px solid #000
+    
+    
+    // Drop Down Topic
+    
+    
+    .inputbox
+        & input[type="radio"]
+            width: 24px
+            height: 24px
+        & i
+            width: 24px
+            height: 24px
+        & p
+            margin-left: 32px
+    
+            
+    
+      
+    section.formcontainer 
+        & .right
+            & .phonecall
+                margin-top: 24px
+            & .reg-btn
+                margin-top: 48px
+           
+        
+    .dropdown-button
+        padding: 16px 0
+        margin: 32px 0 0
+        & span
+            & svg
+                margin-right: 16px
+                margin-left: 8px
+    
+    .dropdown-topic
+        width: 100%
+    
+    .dropdown-options 
+      max-height: 209px
+    
+      & .option 
+        
+        & label 
+            padding: 0 0 0 8px
+
+
+    #form-topic
+        & label span
+            padding-left: 8px
+
+    #form-time
+        & label span
+            padding-left: 6px
+        
+      
+    
+    
+    .dropdown-arrow 
+      width: 13px
+      height: 13px
+      bottom: -5px
+      left: -15px
+      margin-top: 2px
+    
+      &:before,
+      &:after
+        width: 10px
+        height: 1px
+      
+      &:after 
+        top: -5px
+        left: 5px
+    
+    
+    // Yes & No // 
+    
+    .inputbox
+        margin-right: 16px
+    
+    
+    
+    
+    // Text Inputs //
+    
+    
+    .dropdown-box
+        margin-top: 32px
+    
+    
+    .input-wrapper
+        padding: 16px 0
+        & svg
+            margin-right: 16px
+            margin-left: 8px
+        & input
+            width: 100%
+    
+    .namebox
+        margin-top: 24px
+
+
+
+
+    .msgbox
+        & .input-wrapper
+            padding: 16px 0 15px
+            & textarea
+                padding: 27px 0 0 48px
+            & svg
+                bottom: 16px
+                left: 3px
+                position: absolute
+
+
+    .dropdown-topic
+        & svg.icon
+            bottom: 20px
+            left: 8px
+        & .dropdown-label-topic
+            padding-left: 46px
+    
+    .dropdown-time
+        & svg.icon
+            bottom: 19px
+            left: 8px
+        & .dropdown-label-time
+            padding-left: 46px
+
+
+
+
+
+    // Validation //
+
+    .errorbox, .succesbox
+        & div
+            padding: 20px 74px 28px
+            width: 26.563%
+            top: 30%
+            & h4
+                margin-bottom: 24px
+            & p
+                margin-bottom: 40px
+            & button
+                width: 70.445%
+
+
+
+
+
+
+
+
+
+    // Prices // 
+
+
+
+    body.prices
+        & section
+            padding-bottom: 152px
+            & h3
+                margin-bottom: 80px
+            & main
+                justify-content: space-between
+                & div.flex
+                    justify-content: space-between
+                    & div.price-wrapper
+                        width: 42.328%
+                        & p.about
+                            margin-bottom: 40px
+                            margin-top: 40px
+                            width: 99%
+                        & div.flex
+                            justify-content: space-between
+                            margin-bottom: 4px
+                            & p
+                                height: max-content
+                            & div.column
+                                width: max-content
+                                & p
+                                    margin-top: 0
+                                    margin-bottom: 8px
+                    & div.price-wrapper.last
+                        & p
+                            margin-top: 88px
+                        & button
+                            margin-top: 48px
+                & div.flex.first
+                    margin-bottom: 64px
+                & div.flex.second
+                    margin-bottom: 80px
+                & svg.luna
+                    right: 2%
+                    bottom: -6.5%
+                    width: 31.6vw
+                & svg.luna.visible
+                    & path
+                        animation: luna 30s forwards
+             
+
+    // OFFERS //
+
+
+
+
+
+
+    // Offer //
+
+
+    body.offer
+        & header
+            & main
+                background-image: url('assets/images/offer/header.jpg')
+                background-repeat: no-repeat
+                background-position: top
+                background-size: cover
+                & div.wrapper
+                    margin: 152px 0 0 0
+                    & p
+                        // width: 44%
+                    & h2
+                        &::after
+                                width: calc( 162.9% + 16px)
+                                left: -64%
+        & section.pico-sure
+            padding-top: 128px
+        & section.fat
+            padding-bottom: 184px
+
+
+    // Pico Sure
+
+    body.picosure
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider2.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/picosure/bg_offer_picosure1.png)
+
+    // Hybrid
+
+    body.hybrid
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider3.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_2_bg.png)
+            & .right
+                & button
+                    margin-top: 48px
+
+
+    // MAKEUP
+
+    body.makeup
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider4.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_3_bg.png)
+
+
+    // Screw
+
+    body.screw
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider5.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_4_bg.png)
+
+
+    // Changes
+
+    body.changes
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider6.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_5_bg.png)
+
+
+    
+    // Moles
+
+    body.moles
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider7.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_6_bg.png)
+
+
+    // fat
+
+    body.fat
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider8.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_7_bg.png)
+
+
+
+    body.offers
+        & header
+            & main
+                background-repeat: no-repeat
+                background-position: top
+                background-size: cover
+                & div.wrapper
+                    margin: 56px 0 0 0
+                    & p
+                        // width: 27%
+        & section.offers
+            padding-top: 128px
+            align-items: flex-start
+            & .left
+                & .wrapper
+                    width: auto
+                    margin-top: 0
+                & p
+                    width: 79.094%
+            & .right
+                width: 45.5%
+                align-items: unset
+                & .wrapper
+                    margin-top: 0
+                & .price-wrapper
+                    & h3
+                        margin-bottom: 16px
+                    & div.flex
+                        justify-content: space-between
+                    & p
+                        margin-top: 0
+                    & div.column
+                        & p
+                            margin-bottom: 16px
+        & section.contact
+            padding-top: 134px
+            & .left
+                width: auto
+                & div.wrapper
+                    width: auto
+            & .right
+                width: 54.5%
+                justify-content: space-between
+                & .wrapper
+                    margin-top: 0
+                    & .email
+                        margin-top: 23px
+        & section
+            padding-right: 312px
+            padding-left: 181px
+            & h2
+                & span.reg
+                    &::after
+                        left: -68.5%
+                        width: calc( 166.2% + 16px)
+
+
+
+
+    ul
+        margin-top: 8px
+        list-style: disc inside
+
+
+    // About//
+    
+    body.about
+        & header
+            & main
+                & .wrapper
+                    margin: 96px 0 0 0
+                    // color: black
+                    // & p
+                    //     width: 29%
+            & svg.woman
+                right: 7.75%
+                top: 0
+        & section
+            padding: 64px 181px 64px 0
+            & .photobox
+                &::after
+                    width: 88.666%
+                & .colored-bg
+                    width: 100%
+            & .wrapper
+                & p
+                    width: 88%
+            & button
+                margin-top: 24px
+        & section.reverse
+            padding: 64px 0 64px 181px
+            & button
+                margin-top: 48px
+        & section.last
+            padding: 64px 0 128px 181px 
+        & section.bottom
+            padding: 0 552px 136px
+            text-align: center
+            & a.first
+                margin-right: 40px
+            & button
+                margin-top: 36px
+
+
+
+
+        
+@media (min-width: $breakpoint-desktopSmall) and (max-width: $breakpoint-desktop)
+
+
+    // Fonts //
+    
+    h1
+        font-size: 4.166666666666667vw
+        letter-spacing: 0.11999999999999998vw
+        line-height: 4.583333333333333vw
+
+    section h2
+        line-height: 2.8125vw
+        font-size: 2.5vw
+        letter-spacing: 0.11999999999999998vw
+    
+    header h2
+        font-size: 1.6666666666666667vw
+        letter-spacing: 0.08vw
+        line-height: 2.308854166666667vw
+
+    h3
+        letter-spacing: 0.05500000000000001vw
+        line-height: 2.308854166666667vw
+        font-size: 1.6666666666666667vw
+
+    h4, body.contact h5
+        font-size: 1.1458333333333333vw
+        letter-spacing: 0.05500000000000001vw
+        line-height: 2.308854166666667vw
+
+    p, ul li
+        font-size: 0.9375vw
+        letter-spacing: 0.014999999999999998vw
+        line-height: 1.3541666666666667vw
+    
+    a
+        font-size: 0.8333333333333334vw
+
+
+    p.price
+        font-family: "Jost SemiBold"
+        font-weight: 400
+        margin: 0
+
+
+    ::-webkit-input-placeholder
+        font-size: 0.8333333333333334vw
+        letter-spacing: 0.04vw
+
+    ::-moz-placeholder
+        font-size: 0.8333333333333334vw
+        letter-spacing: 0.04vw
+    
+    :-ms-input-placeholder
+        font-size: 0.8333333333333334vw
+        letter-spacing: 0.04vw
+    
+    :-moz-placeholder
+        font-size: 0.8333333333333334vw
+        letter-spacing: 0.04vw
+
+    input[type="text"], input[type="email"]
+        font-size: 0.8333333333333334vw
+        letter-spacing: 0.04vw
+
+    // General //
+
+    .mobile
+        display: none
+
+    section
+        padding: 0 9.427083333333334vw
+
+    button.reg-btn
+        padding: 1.0416666666666667vw 2.5520833333333335vw
+        font-size: 0.8333333333333334vw
+    
+    // Nav //
+
+    nav 
+        padding: 1.6927083333333333vw 9.895833333333334vw
+        & a.link
+            margin-right: 2.5vw
+        & a.icon
+            margin-left: 0.4166666666666667vw
+            line-height: unset
+
+
+
+
+
+    div.loader
+        height: 100vh
+        display: flex
+        justify-content: center
+        & .logobox
+            padding-top: 128px
+        & svg.loader-text-colored
+            left: 0
+            top: 40%
+            left: 16px
+        & svg.loader-woman
+            bottom: 0
+            width: 35%
+            height: auto
+
+        
+
+    .menubox
+        height: 100vh
+
+
+    // Header //
+
+    header
+        height: 100vh
+        & main
+            padding-left: 9.895833333333334vw
+            // justify-content: center
+            background-position: 26%
+            & div.wrapper
+                width: 43%
+                margin: 7.916666666666667vw 0 0 9.895833333333334vw
+            & h1
+                position: relative
+            & h2
+                &::after
+                    width: calc( 135.9% + 16px )
+                    height: 36.1%
+                    left: -36%
+            & p 
+                margin-top: 1.6666666666666667vw
+                // width:  70%
+            & .reg-btn
+                margin-top: 2.03125vw
+            & .slider-nav
+                margin-top: 32.5vw
+                align-items: flex-end
+                width: 37.867%
+                justify-content: space-between
+                & p
+                    font-size: 2.3958333333333335vw
+                    width: auto
+                    line-height: 1.8098958333333333vw
+                    margin: 0
+                    position: relative
+                    z-index: 1
+                    top: 0.10416666666666667vw
+                    &::after
+                        content: ''
+                        display: block
+                        background: white
+                        position: absolute
+                        height: 46%
+                        width: 277%
+                        bottom: 0
+                        left: -20%
+                        z-index: -1
+                & button
+                    margin-right: 17px
+
+    section
+        padding-top: 4.791666666666667vw
+        padding-bottom: 4.791666666666667vw
+        position: relative
+        & .photobox
+            height: 32.5vw
+        & img
+            width: 40.572916666666664vw
+            right: 0
+        & h2
+            & span.reg
+                &::after
+                    left: -2.5%
+                    width: calc( 100.5% + 0.8333333333333334vw)
+        & .nav-area
+            top: 0
+            left: 0
+
+
+
+    
+    section.normal
+        align-items: center
+        & .right
+            width: 50%
+            align-items: center
+            justify-content: center
+            & .wrapper
+                width: 70%
+            & .photobox
+                &::after
+                    left: -7.5%
+        & .left
+            align-items: center
+            position: relative
+            width: 45.556%
+            & .wrapper
+                width: 67%
+            & .photobox
+                &::after
+                    right: -7.5%
+
+
+    section.reverse
+        & .right
+            width: 45%
+        & .left
+            width: 50%
+
+    
+    
+    section.about
+        padding-top: 4.583333333333333vw
+        padding-bottom: 5.833333333333333vw
+        padding-right: 21.75%
+        // align-items: flex-end
+        & div.right
+            width: 40%
+        & p
+            margin-top: 0
+
+    
+
+
+    section.pico-sure
+        padding-top: 0
+        & .right
+            & .wrapper
+                margin-top: 1.6666666666666667vw
+                margin-left: 1.25vw
+                & h2
+                    padding-left: 0.4166666666666667vw
+                & button
+                    margin-top: 2.03125vw
+    
+    
+    
+    
+    section.hybrid
+        & .left
+            align-self: center
+            align-items: center
+            width: 50%
+            & .wrapper
+                margin-top: 1.6666666666666667vw
+                & h2
+                    padding-left: 0.4166666666666667vw
+                & button
+                    margin-top: 2.0833333333333335vw
+    
+    
+    section.makeup
+        & .right
+            & .wrapper
+                margin-top: 1.6666666666666667vw
+                & h2
+                    padding-left: 0.4166666666666667vw
+                & button
+                    margin-top: 2.03125vw
+    
+    
+    
+    section.screw
+        & .left
+            & .wrapper
+                margin-top: 1.6666666666666667vw
+                & h2
+                    padding-left: 0.4166666666666667vw
+                & button
+                    margin-top: 2.0833333333333335vw
+    
+                
+    
+    section.changes
+        & .right
+            & .wrapper
+                margin-top: 1.6666666666666667vw
+                & h2
+                    padding-left: 0.4166666666666667vw
+                & button
+                    margin-top: 2.03125vw
+         
+    
+    
+    section.moles
+        & .wrapper
+            margin-top: 1.6666666666666667vw
+            & h2
+                padding-left: 0.4166666666666667vw
+            & button
+                margin-top: 2.03125vw
+
+
+    section.fat
+        & .wrapper
+            margin-top: 32px
+            & h2
+                padding-left: 8px
+            & button
+                margin-top: 39px
+        & .right
+            & .wrapper
+                width: 67%
+    
+
+    
+    section.light
+        padding-top: 8.75vw
+        padding-bottom: 4.791666666666667vw
+        & h3
+            margin-top: 1.5625vw
+        & .right
+            width: 48%
+            & .wrapper
+                width: 77%
+                & button
+                    margin-top: 2.0833333333333335vw
+                & h4
+                    margin-top: 0.4166666666666667vw
+                & p
+                    margin-top: 2.03125vw
+        & svg.woman
+            width: 49.22239583333333vw
+            height: 41.466145833333336vw
+            position: absolute
+            bottom: -7.5%
+            left: 2.5%
+            & path
+                stroke-width: 1px
+        & svg.clinic
+            width: 37.097917vw
+            height: 6.2vw
+            left: 21.5%
+            bottom: 22.1%
+        & .left
+            width: 45.556%
+        & .svgbox
+            width: 100%
+            left: -30px
+
+    
+
+    
+    
+    
+    section.contact
+        padding-top: 15.833333333333334vw
+        padding-bottom: 13.333333333333334vw
+        & .left
+            justify-content: center
+            align-items: center
+            width: 45.556%
+            & .wrapper
+                width: 64%
+                & button
+                    margin-top: 2.03125vw
+        & .right
+            width: 50%
+            align-items: center
+            & .wrapper
+                width: 67%
+                & h5
+                    font-size: 2.5vw
+                    line-height: 2.8125vw
+                    margin-bottom: 1.25vw
+                & .email
+                    margin-top: 0.4166666666666667vw
+    
+    
+    
+    footer
+        padding: 4.6875vw 10vw 1.6666666666666667vw
+        & .wrapper
+            width: 100%
+            margin-bottom: 4.114583333333333vw
+            justify-content: space-between
+            & .left,.right
+                & div
+                    margin-right: 4.583333333333333vw
+                    & h5
+                        font-size: 1.1458333333333333vw
+                        margin-bottom: 0.8333333333333334vw
+                    & a
+                        line-height: 1.6666666666666667vw
+                        width: max-content
+                        align-items: center
+                        & svg
+                            margin-right: 0.8333333333333334vw
+                    & a.flex
+                        margin-bottom: 0.4166666666666667vw
+                    & p.phone
+                        margin-top: 2.0833333333333335vw
+                & .last
+                    margin-right: 0
+        & .bottom
+            & svg
+                margin-left: 0.8333333333333334vw
+
+
+    
+        // CONTACT //
+
+
+    body.contact
+        & section
+            padding: 3.75vw 0 0
+        & main
+            padding: 0 16.666666666666668vw 7.083333333333333vw 9.583333333333334vw
+            justify-content: space-between
+        & .right
+            width: 36.171%
+        & label span
+            font-size: 0.7291666666666666vw
+            letter-spacing: 0.035vw
+            line-height: 2.308854166666667vw
+        & h2
+            margin-bottom: 1.6666666666666667vw
+        & h3
+            font-size: 2.5vw
+            line-height: 2.8125vw
+            letter-spacing: 0.11999999999999998vw
+        & .first-p
+            margin-bottom: 2.9166666666666665vw
+        & h3
+            margin-bottom: 1.25vw
+        & p
+            margin-top: 0
+        & h5.address
+             margin-top: 1.6666666666666667vw
+        & img
+            width: unset
+
+
+
+
+
+    // Form //
+
+
+    $border: 1px solid #000
+    
+    
+    // Drop Down Topic
+    
+    
+    .inputbox
+        & input[type="radio"]
+            width: 1.25vw
+            height: 1.25vw
+        & i
+            width: 1.25vw
+            height: 1.25vw
+        & p
+            margin-left: 1.6666666666666667vw
+    
+            
+    
+      
+    section.formcontainer 
+        & .right
+            & .phonecall
+                margin-top: 1.25vw
+            & .reg-btn
+                margin-top: 2.5vw
+
+    .dropdown-topic
+        width: 100%
+           
+        
+    .dropdown-button
+        padding: 0.8333333333333334vw 0
+        margin: 1.6666666666666667vw 0 0
+        & span
+            & svg
+                margin-right: 0.8333333333333334vw
+    
+    
+
+    .dropdown-topic
+        & svg.icon
+            bottom: 1.0416666666666667vw
+            left: 0.4166666666666667vw
+        & .dropdown-label-topic
+            padding-left: 2.3958333333333335vw
+    
+    .dropdown-time
+        & svg.icon
+            bottom: 0.9895833333333334vw
+            left: 0.4166666666666667vw
+        & .dropdown-label-time
+            padding-left: 2.3958333333333335vw
+    
+    .dropdown-options 
+      max-height: 10.885416666666666vw
+    
+      & .option 
+        
+        & label 
+            padding: 0 0 0 0.4166666666666667vw
+            & span
+                & svg
+                    margin-right: 0.8333333333333334vw
+
+
+
+    #form-topic
+        & label span
+            padding-left: 2.0833333333333335vw
+
+    #form-time
+        & label span
+            padding-left: 1.9791666666666667vw
+        
+        
+      
+    
+    
+    .dropdown-arrow 
+      width: 0.6770833333333334vw
+      height: 0.6770833333333334vw
+      bottom: -0.2604166666666667vw
+      left: -0.78125vw
+      margin-top: 0.10416666666666667vw
+    
+      &:before,
+      &:after
+        width: 0.5208333333333334vw
+        height: 0.052083333333333336vw
+      
+      &:after 
+        top: -0.2604166666666667vw
+        left: 0.2604166666666667vw
+    
+    
+    // Yes & No // 
+    
+    .inputbox
+        margin-right: 0.8333333333333334vw
+    
+    
+    
+    
+    // Text Inputs //
+    
+    
+    .dropdown-box
+        margin-top: 1.6666666666666667vw
+    
+    
+    .input-wrapper
+        padding: 0.8333333333333334vw 0
+        & svg
+            margin-right: 0.8333333333333334vw
+        & input
+            width: 100%
+    
+    .namebox
+        margin-top: 1.25vw
+
+    .msgbox
+        & .input-wrapper
+            padding: 1.25vw 0 0.78125vw
+            & textarea
+                padding: 1.40625vw 0 0 2.5vw
+        & svg
+            bottom: 0.8333333333333334vw
+            left: 0.15625vw
+            position: absolute
+
+
+
+
+
+    // Validation //
+    
+    .errorbox, .succesbox
+        & div
+            padding: 20px 74px 28px
+            width: 26.563%
+            top: 30%
+            & h4
+                margin-bottom: 24px
+            & p
+                margin-bottom: 40px
+            & button
+                width: 70.445%
+
+
+
+
+        // Prices // 
+
+
+
+    body.prices
+        & section
+            padding-bottom: 7.916666666666667vw
+            & h3
+                margin-bottom: 4.166666666666667vw
+            & main
+                justify-content: space-between
+                & div.flex
+                    justify-content: space-between
+                    & div.price-wrapper
+                        width: 42.328%
+                        & p.about
+                            margin-bottom: 2.0833333333333335vw
+                            margin-top: 2.0833333333333335vw
+                            width: 99%
+                        & div.flex
+                            justify-content: space-between
+                            margin-bottom: 0.20833333333333334vw
+                            & p
+                                height: max-content
+                            & div.column
+                                width: max-content
+                                & p
+                                    margin-top: 0
+                                    margin-bottom: 0.4166666666666667vw
+                    & div.price-wrapper.last
+                        & p
+                            margin-top: 4.583333333333333vw
+                        & button
+                            margin-top: 2.5vw
+                & div.flex.first
+                    margin-bottom: 3.3333333333333335vw
+                & div.flex.second
+                    margin-bottom: 4.166666666666667vw
+                & svg.luna
+                    right: 2%
+                    bottom: -6.5%
+                    width: 40%
+                    // width: 32.25vw
+                & svg.luna.visible
+                    & path
+                        animation: luna 30s forwards
+
+
+
+
+    // Offer //
+
+
+    body.offer
+        & header
+            & main
+                background-image: url('assets/images/offer/header.jpg')
+                background-repeat: no-repeat
+                background-position: top
+                background-size: cover
+                & div.wrapper
+                    margin: 7.916666666666667vw 0 0 0
+                    & p
+                        width: 44%
+                    & h2
+                        &::after
+                            width: calc( 162.9% + 16px)
+                            left: -64%
+        & section.pico-sure
+            padding-top: 6.666666666666667vw
+        & section.fat
+            padding-bottom: 9.583333333333334vw
+
+
+    
+
+        // Pico Sure
+
+    body.picosure
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider2.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/picosure/bg_offer_picosure1.png)
+
+    // Hybrid
+
+    body.hybrid
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider3.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_2_bg.png)
+            & .right
+                & button
+                    margin-top: 48px
+
+
+    // MAKEUP
+
+    body.makeup
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider4.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_3_bg.png)
+
+
+    // Screw
+
+    body.screw
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider5.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_4_bg.png)
+
+
+    // Changes
+
+    body.changes
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider6.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_5_bg.png)
+
+
+    
+    // Moles
+
+    body.moles
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider7.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_6_bg.png)
+
+
+    // fat
+
+    body.fat
+        & header
+            & main
+                background-image: url('assets/images/slider/bg_slider8.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_7_bg.png)
+
+
+
+
+    body.offers
+        & header
+            & main
+                background-repeat: no-repeat
+                background-position: top
+                background-size: cover
+                & div.wrapper
+                    margin: 2.9166666666666665vw 0 0 0
+        & section.offers
+            padding-top: 6.666666666666667vw
+            align-items: flex-start
+            & .left
+                & .wrapper
+                    width: 70%
+                    margin-top: 0
+                & p
+                    width: 78.79%
+            & .right
+                width: 45.5%
+                align-items: unset
+                & .price-wrapper
+                    & h3
+                        margin-bottom: 0.8333333333333334vw
+                    & div.flex
+                        justify-content: space-between
+                    & p
+                        margin-top: 0
+                    & div.column
+                        & p
+                            margin-bottom: 0.8333333333333334vw
+        & section.contact
+            padding-top: 6.979166666666667vw
+            & .left
+                width: auto
+                & div.wrapper
+                    width: auto
+            & .right
+                width: 54.5%
+                justify-content: space-between
+                & .wrapper
+                    margin-top: 0
+                    & .email
+                        margin-top: 1.1979166666666667vw
+        & section
+            padding-right: 16.25vw
+            padding-left: 9.427083333333334vw
+            & h2
+                & span.reg
+                    &::after
+                        left: -63.5%
+                        width: calc( 163.2% + 0.8333333333333334vw)
+
+
+
+
+    // About//
+    
+    body.about
+        & header
+            & main
+                & .wrapper
+                    margin: 5vw 0 0 0
+                    & p
+                        width: 68%
+            & svg.woman
+                right: 7.75%
+                top: 0
+                width: 49.3359375vw
+        & section
+            padding: 3.3333333333333335vw 9.427083333333334vw 3.3333333333333335vw 0
+            & .photobox
+                &::after
+                    width: 88.666%
+                & .colored-bg
+                    width: 100%
+            & .wrapper
+                & p
+                    width: 80%
+            & button
+                margin-top: 1.25vw
+        & section.reverse
+            padding: 3.3333333333333335vw 0 3.3333333333333335vw 9.427083333333334vw
+            & button
+                margin-top: 2.5vw
+        & section.last
+            padding: 3.3333333333333335vw 0 9.166666666666666vw 9.427083333333334vw 
+        & section.bottom
+            padding: 0 28.75vw 7.083333333333333vw
+            text-align: center
+            & a.first
+                margin-right: 2.0833333333333335vw
+            & button
+                margin-top: 1.875vw
+
+
+    ul
+        margin-top: 0.4166666666666667vw
+        list-style: disc inside
+
+
+
+
+@media (min-width: $breakpoint-phone) and (max-width: $breakpoint-desktopSmall)
+
+
+    body
+        height: -webkit-fill-available
+
+    // Fonts //
+    
+    h1
+        font-size: 34px
+        letter-spacing: 1.632px
+        line-height: 39.55px
+
+    body.contact h3, body.contact .right h2, section.offers .right h3
+        line-height: 32px
+        font-size: 29px
+        letter-spacing: 1.392px
+        width: min-content
+
+
+    section h2
+        line-height: 32px
+        font-size: 29px
+        letter-spacing: 1.392px
+    
+    header h2, .contact section h2
+        font-size: 15px
+        line-height: 30px
+        letter-spacing: 1.056px
+
+    h3
+        letter-spacing: 0.912px
+        line-height: 25.33px
+        font-size: 19px
+
+    h4, body.contact h5
+        font-size: 19px
+        letter-spacing: 0.912px
+        line-height: 25.33px
+
+    p, button span,.mailbox a
+        font-size: 16px
+        letter-spacing: 0.256px
+        line-height: 24px
+    
+    a
+        font-size: 14px
+
+
+
+    #form-topic
+        & label span
+            font-size: 13px
+            padding-left: 8px
+
+    #form-time
+        & label span
+            font-size: 16px
+            padding-left: 8px
+
+
+    body.offer, body.offers
+        & header
+            & p
+                line-height: 25px
+
+
+    ::-webkit-input-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+
+    ::-moz-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+    
+    :-ms-input-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+    
+    :-moz-placeholder
+        font-size: 16px
+        letter-spacing: 0.768px
+
+    input[type="text"], input[type="email"]
+        font-size: 16px
+        letter-spacing: 0.768px
+
+
+    // General //
+
+    .desktop
+        display: none
+
+
+    button.reg-btn
+        padding: 16.5px 28.46px
+        font-size: 14px
+
+
+    // Loader //
+
+    .loader
+        height: calc( 100vh - 52px )
+        & .logobox
+            margin-top: 48px
+        & svg.loader-woman
+            right: -39%
+            bottom: 10px
+        & svg.loader-text-colored
+            bottom: 30px
+            left: 16px
+    
+    // Nav //
+
+    nav 
+        padding: 12.7px 16px
+        & .burger
+            flex-direction: column
+            position: relative
+            bottom: 4px
+            & span
+                background-color: $maincolor
+                height: 1px
+                display: block
+                border-radius: 5px
+            & span.first
+                margin-bottom: 5px
+                width: 22px
+            & span.second
+                width: 14px
+                align-self: flex-end
+        & a.logo
+            width: 35.52%
+            & svg
+                // width: 53.78%
+                height: auto
+            & svg.logo-circle
+                margin-right: 8px
+                transition: .5s ease
+                transform-origin: center
+                transform: rotate(0)
+        // & a.link
+        //     margin-right: 2.5vw
+        // & a.icon
+        //     margin-left: 0.4166666666666667vw
+        //     line-height: unset
+
+    nav.global
+        position: fixed
+        transform: translateY(-100%)
+        transition: .36s ease
+
+    nav.global.on
+        transform: translateY(0)
+
+
+    #LOGOTYP
+        fill: black
+
+    .menubox
+        height: calc( 100vh - 52px )
+
+        
+    // Header //
+
+    header
+        height: calc(100vh - 52px)
+        & main
+            padding-left: 16px
+            justify-content: flex-end
+            & .slide
+                // padding-top: 54.19px
+            & p
+                margin-top: 20px
+                width: 100%
+            & h2
+                position: relative
+                bottom: 5px
+                width: 102%
+                &::after
+                    height: 9px
+                    left: -5%
+                    width: calc(100% + 20.65px)
+                    bottom: 10px
+            & .slide
+                width: 100%
+                & .container
+                    & img
+                        width: 97%
+                        height: auto
+                & .wrapper
+                    width: 100%
+                    padding: 25px 16px 0
+                    & h1
+                        position: relative
+                    & button
+                        margin-top: 26px
+            & .reg-btn
+                padding: 11px 16.04px
+            & .rotated
+                color: white
+                font-size: 22px
+                line-height: 28.82px
+                letter-spacing: 1.056px
+                transform: rotate(-90deg)
+                position: relative
+                bottom: 10%
+                left: -10%
+                width: min-content
+            & .slider-nav
+                align-self: flex-end
+                width: 100%
+                align-items: center
+                margin-bottom: 20px
+                & p.counter
+                    font-size: 29px
+                    letter-spacing: 1.392px
+                    position: relative
+                    z-index: 1
+                    bottom: 4px
+                    &::after
+                        height: 9px
+                        left: -15%
+                        width: 93%
+                        bottom: 10%
+                        content: ''
+                        position: absolute
+                        display: block
+                        background-color: white
+                        z-index: -1
+                    & span
+                        display: inline-block
+                & .slider-nav__btns
+                    & button
+                        margin-right: 10.5px
+                        pointer-events: none
+                        & circle
+                            fill: rgba(255,255,255, 0)
+                            transition: .36s ease
+                            transition-delay: -.36s
+                    & button.on
+                        & circle
+                            fill: rgba(255,255,255, 1)
+                            transition-delay: .27s
+                & .black
+                    background-color: black
+                & .transparent
+                    margin-left: 5px
+                & .btnbox button
+                    padding: 11px 10.5px
+
+    
+    // Sections // 
+    
+    section
+        padding-top: 0
+        padding-bottom: 20px
+        padding: 0 16px
+        flex-direction: column
+        & h3 
+            margin-top: 10px
+        & p
+            margin-top: 24px
+        & .photobox
+            height: 272.56px
+            width: 306.63px
+        & img
+            width: auto
+            bottom: -7.5%
+            left: -17px
+        & a
+            margin-top: 33px
+        & .right
+            align-self: center
+            & .photobox
+                &::after
+                    left: -6.5%
+        & h2
+            & span.reg
+                &::after
+                    left: -28.5%
+                    width: calc( 126% + 8px)
+
+
+
+
+
+
+
+
+    section.normal
+        padding-bottom: 25px
+        & p
+            width: 90%
+        & .left, .right
+            margin-bottom: 50px
+            & .wrapper
+                margin-left: 21px
+
+
+
+    
+
+    section.reverse
+        .left
+            order: 2
+        .right
+            padding-left: 18px
+
+    
+    
+
+
+    section.about
+        padding-top: 40px
+        padding-bottom: 50px
+        // align-items: flex-end
+        & div.right
+            width: auto
+        & div.left
+            flex-direction: column
+
+    
+
+
+    section.pico-sure
+        padding-top: 0
+    
+    
+    
+    
+    section.hybrid
+        & .left
+            align-items: center
+            align-self: center
+
+
+    
+    
+    section.changes
+        & h2
+            width: auto
+
+
+    section.fat
+        padding-bottom: 0
+
+
+
+    
+    section.light
+        padding-top: 0
+        padding-bottom: 36px
+        & h2
+            width: auto
+            margin-bottom: 8px
+        & .right
+            & .wrapper
+                & h4
+                    margin-bottom: 24px
+                // & p
+                //     width: 104%
+        & .svgbox
+            position: relative
+            margin-bottom: 24px
+            & svg.clinic
+                width: 72.09%
+                height: auto
+            & svg.woman
+                position: relative
+                bottom: 5px
+                width: 89.805%
+                height: auto
+                & path
+                    stroke-width: 3px
+            & h3
+                transform: rotate(90deg)
+                position: absolute
+                right: 0
+                right: -23%
+                top: 25%
+        & a
+            margin-top: 56px
+    
+    
+    
+    section.contact
+        padding: 0 16px 48px 37px
+        overflow: hidden
+        & h2
+            width: auto
+        & .left
+            & p
+                margin-bottom: 40px
+            & .wrapper
+                // & button
+                //     margin-top: 2.03125vw
+        & .right
+            & svg
+                left: 7%
+                width: 88%
+                height: auto
+                bottom: 24%
+            & .wrapper
+                & h5
+                    font-size: 29px
+                    line-height: 54px
+                    margin-bottom: 16px
+                & p
+                    margin: 8px 0 16px
+                // & .email
+                //     margin-top: 0.4166666666666667vw
+        a
+            margin-top: 32px
+            width: max-content
+            & button
+                margin: 0
+
+
+    // Footer //
+
+    
+    footer
+        flex-direction: column
+        padding: 48px 24px 32px 16px
+        & h5
+            font-size: 19px
+            letter-spacing: 0.912px
+            line-height: 25.33px
+            margin-bottom: 8px
+        p,a
+            font-size: 16px
+            line-height: 32px
+            letter-spacing: 0.256px
+            margin-bottom: 4px
+        & .wrapper
+            flex-direction: column
+            & a, p 
+                align-items: center
+                & svg
+                    margin-right: 16px
+            & .left
+                flex-direction: column
+            & .right
+                flex-direction: column
+            & .flex
+                & .column
+                    margin-bottom: 80px
+        & .bottom
+            & a.flex
+                flex-direction: column
+                text-transform: uppercase
+                align-items: flex-start
+
+
+
+            // CONTACT //
+
+    body.subpage
+        & section
+            padding: 0
+            & main
+                width: 100%
+                flex-direction: column
+                padding: 19px 16px 48px            
+
+
+    body.contact
+                & section
+                    overflow: hidden
+                & h2, h3
+                    width: auto
+                & .left
+                    display: flex
+                    flex-direction: column
+                    margin-bottom: 40px
+                    & p.first-p
+                        margin-bottom: 40px
+                    & .addressbox
+                        order: 1
+                        margin-top: 24px
+                        & p
+                            margin: 8px 0 0 0
+                    & .mailbox
+                        order: 2
+                        margin-top: 24px
+                        & h5 
+                            margin: 0 0 8px 0
+                & .right
+                    & p
+                        width: 90%
+                    & .reg-btn
+                        margin-top: 32px
+                & li
+                    width: 120%
+                & .yesbox
+                    flex-direction: column
+                    & div
+                        width: 100%
+                    & .dropdown-time
+                        margin-top: 24px
+                & h2
+                    & span.reg
+                        &::after
+                            left: -10.5%
+                            width: calc( 108% + 8px)
+                //     margin-bottom: 8px
+                // & h3
+                //     margin-bottom: 24px
+                // & p
+                //     margin-top: 0
+                // & h5.address
+                //     margin-top: 32px
+             
+
+
+
+
+
+    // Form //
+
+
+    $border: 1px solid #000
+    
+    
+    // Drop Down Topic
+    
+    
+    .inputbox
+        & input[type="radio"]
+            width: 24px
+            height: 24px
+        & i
+            width: 24px
+            height: 24px
+            &::before
+                width: 13.54px
+                height: 13.54px
+        & p
+            margin-left: 32px
+
+
+    form
+        & button
+            & span
+                // font-size: 13px
+    
+            
+
+    input
+        padding: 0
+    
+      
+    section.formcontainer 
+        & .right
+            & .phonecall
+                margin-top: 24px
+                & p
+                    margin-top: 0
+            & .reg-btn
+                margin-top: 48px
+           
+    
+    
+    .dropdown-topic
+        & svg.icon
+            bottom: 20px
+            left: 8px
+        & .dropdown-label-topic
+            padding-left: 32px
+    
+    .dropdown-time
+        & svg.icon
+            bottom: 20px
+            left: 8px
+        & .dropdown-label-time
+            padding-left: 32px
+        
+    .dropdown-button
+        padding: 16px 8px
+        margin: 32px 0 0
+        & span
+            & svg
+                margin-right: 16px
+    
+    
+    
+    .dropdown-options 
+      max-height: 209px
+
+
+      & .option 
+        & label 
+            padding: 16px 0px
+            & svg
+                margin-right: 16px
+        
+      
+    
+    
+    .dropdown-arrow 
+      width: 13px
+      height: 13px
+      bottom: -5px
+      left: -15px
+      margin-top: 2px
+    
+      &:before,
+      &:after
+        width: 10px
+        height: 1px
+      
+      &:after 
+        top: -5px
+        left: 5px
+    
+    
+    // Yes & No // 
+    
+    .inputbox
+        margin-right: 16px
+        & p
+            margin: 0 0 0 32px
+    
+    
+    
+    
+    // Text Inputs //
+    
+    
+    .dropdown-box
+        margin-top: 24px
+    
+    
+    .input-wrapper
+        padding: 16px 8px
+        & svg
+            margin-right: 16px
+        & input
+            width: 100%
+    
+    .namebox
+        margin-top: 24px
+
+    .email-address
+        position: relative
+        top: 1px
+
+
+    .msgbox
+        & .input-wrapper
+            padding: 40px 0 14px 8px
+        & svg
+            margin-left: 4px
+        & textarea
+            height: 27px
+
+
+
+
+    // Validation //
+
+    .errorbox, .succesbox
+        padding: 0 16px
+        & div
+            padding: 24px 16px
+            width: auto
+            top: 30%
+            & h4
+                margin-bottom: 24px
+            & p
+                margin-bottom: 40px
+            & button
+                width: 70.445%
+
+    
+
+
+
+    // Prices // 
+
+
+
+    body.prices
+        & section
+            padding-bottom: 0
+            & h3
+                margin-bottom: 32px
+                margin-top: -2px
+            & main
+                padding: 27px 16px 336px
+                overflow: hidden
+                & h2
+                    width: auto
+                    flex-direction: column
+                & div.flex
+                    justify-content: space-between
+                    flex-direction: column
+                    & div.price-wrapper
+                        margin-bottom: 32px
+                        & p.about
+                            // width: 102%
+                            margin-bottom: 48px
+                        & div.flex
+                            justify-content: space-between
+                            margin-bottom: 24px
+                            & p.price
+                                margin-top: 8px
+                                font-size: 15px
+                            & div.column
+                                & p
+                                    margin-top: 0
+                & div.flex.third
+                    & div.price-wrapper
+                        margin-bottom: 0
+                & svg.luna
+                    width: 89.885%
+                    bottom: -.4%
+                    right: -3%
+                & svg.luna.visible
+                    & path
+                        animation: luna 55s forwards
+
+
+    // Offer //
+
+
+    body.offer
+        & header
+            background-image: url('assets/images/offer/headermobile.jpg')
+            background-repeat: no-repeat
+            background-position: bottom
+            & main
+                width: 100%
+                padding: 27px 16px 0
+                & p
+                    width: auto
+            & a
+                align-self: flex-end
+                & button
+                    background: black
+                    padding: 13.54px 15.3px
+        & section.pico-sure
+            padding-top: 56px
+        & .nav-area
+            top: -3.5%
+            left: 0
+
+
+
+
+    // Offers //
+
+
+    body.offers
+        & header
+            background-color: rgb(237,236 ,239)
+            background-repeat: no-repeat
+            background-position-y: 150%
+            & main
+                width: 100%
+                padding: 27px 16px 0
+            & p
+                width: auto
+            & a
+                align-self: flex-end
+                & button
+                    background: black
+                    padding: 13.54px 15.3px
+        & section.offers
+            padding: 56px 0 0 16px
+            position: relative
+            & .right
+                align-self: unset
+            & .wrapper
+                margin-left: 0
+            & .price-wrapper
+                & h3
+                    margin-bottom: 32px
+                & div.flex
+                    flex-direction: column
+                    margin-bottom: 24px
+                    & div.column
+                        margin-bottom: 0
+                & p
+                    margin-top: 0
+                    width: auto
+                & p.price
+                    margin-top: 8px
+            & .nav-area
+                top: -1.5%
+                left: 0
+            & h2
+                width: auto
+        & section.contact
+            padding: 0 16px 48px 16px
+            & h2
+                margin-bottom: 8px
+
+
+    // Pico Sure
+
+    body.picosure
+        & header
+            background-image: url('assets/images/slider/bg_slider2_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/picosure/bg_offer_picosure1.png)
+
+    // Hybrid
+
+    body.hybrid
+        & header
+            background-image: url('assets/images/slider/bg_slider3_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_2_bg.png)
+            & .left
+                align-self: unset
+
+
+    // MAKEUP
+
+    body.makeup
+        & header
+            background-image: url('assets/images/slider/bg_slider4_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_3_bg.png)
+
+
+    // Screw
+
+    body.screw
+        & header
+            background-image: url('assets/images/slider/bg_slider5_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_4_bg.png)
+
+
+    // Changes
+
+    body.changes
+        & header
+            background-image: url('assets/images/slider/bg_slider6_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_5_bg.png)
+
+
+    
+    // Moles
+
+    body.moles
+        & header
+            background-image: url('assets/images/slider/bg_slider7_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_6_bg.png)
+
+
+    body.fat
+        & header
+            background-image: url('assets/images/slider/bg_slider8_mobile.jpg')
+        & section
+            & .grey-bg
+                background-image: url(assets/images/img_offer_6_bg.png)
+
+
+
+
+    // About
+
+
+
+    body.about
+        & header
+            & main
+                padding: 19px 16px 48px
+                & svg
+                    right: -39.15%
+                    bottom: 1.5%
+        & section
+            & h2
+                & span
+                    &::after
+                        left: -79.5%
+                        width: calc( 174% + 8px)
+        & section.s-1
+            padding-top: 80px
+        & section.s-4
+            padding-bottom: 0
+        & section.bottom
+            padding: 0 0 40px 36px
+            & p
+                width: 91%
+                padding-right: 16px
+            & div
+                padding-right: 36px
+                margin-top: 30px
+                & button
+                    width: 100%
+                    margin: 0
+                & a.first
+                    & button
+                        margin-bottom: 16px
+        
+
+
+
+    ul
+        margin-top: 16px
+        list-style: disc inside

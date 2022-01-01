@@ -1,0 +1,1042 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html.loaded {
+  overflow-y: visible;
+}
+
+::-webkit-scrollbar {
+  background: white;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EDD8C4;
+}
+
+.content {
+  opacity: 0;
+}
+
+.loaded .content {
+  opacity: 1;
+}
+
+.loader {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+  overflow: hidden;
+}
+.loader .logobox {
+  align-items: center;
+}
+.loader .logobox .loader-text {
+  margin-top: 16px;
+}
+.loader .logobox svg {
+  position: unset;
+}
+.loader .logobox .loader-circle {
+  animation: 4s linear infinite rotated;
+  transform-origin: center;
+}
+.loader svg.loader-text-colored path {
+  fill: #EDD8C4;
+  stroke: #EDD8C4;
+}
+.loader svg {
+  position: absolute;
+}
+
+.loader.first {
+  opacity: 1;
+}
+
+.loaded .loader {
+  z-index: -1;
+  opacity: 0;
+}
+
+html.loaded nav {
+  opacity: 1;
+}
+
+@keyframes rotated {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@font-face {
+  font-family: "Jost SemiBold";
+  src: url("assets/fonts/Jost-SemiBold.ttf");
+}
+@font-face {
+  font-family: "OpenSans Regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("assets/fonts/OpenSans-Bold.ttf");
+}
+h1, h2, h2 span, h3, h4, h5, .counter, .counter span, a, button, button span, label span, input[type=text], input[type=email], p.option-p, textarea {
+  font-family: "Jost SemiBold";
+  font-weight: 400;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+footer a, p, span, .contact main a, ul li {
+  font-family: "OpenSans Regular";
+  font-weight: 400;
+  margin: 0;
+}
+
+nav a:hover {
+  color: #EDD8C4;
+  transition: 0.34s ease;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Jost SemiBold";
+  font-weight: 400;
+  color: black;
+}
+
+::-moz-placeholder {
+  font-family: "Jost SemiBold";
+  font-weight: 400;
+  color: black;
+}
+
+:-ms-input-placeholder {
+  font-family: "Jost SemiBold";
+  font-weight: 400;
+  color: black;
+}
+
+:-moz-placeholder {
+  font-family: "Jost SemiBold";
+  font-weight: 400;
+  color: black;
+}
+
+input[type=text] {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-family: "OpenSans Bold";
+  font-weight: 400;
+}
+
+.colored-bg {
+  background-color: #EDD8C4;
+}
+
+.colored-f {
+  color: #EDD8C4;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  z-index: 4;
+}
+
+section a {
+  width: max-content;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header, section {
+  width: 100%;
+}
+
+section {
+  justify-content: space-between;
+  position: relative;
+}
+section div {
+  background-size: cover;
+}
+section h2 {
+  position: relative;
+}
+section h2 span.reg {
+  position: relative;
+}
+section h2 span.reg::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 24.62%;
+  bottom: 26%;
+  background-color: #EDD8C4;
+  z-index: -1;
+}
+section p {
+  margin-top: 32px;
+}
+section .photobox {
+  position: relative;
+  width: 100%;
+}
+section .photobox div {
+  width: 0%;
+  height: inherit;
+  transition: 0.36s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  transform-origin: right;
+}
+section .photobox .colored-bg {
+  background-color: #EDD8C4;
+}
+section .photobox::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #EDD8C4;
+  width: 100%;
+  height: 100%;
+  bottom: -7.5%;
+  z-index: -1;
+}
+section img {
+  position: absolute;
+  bottom: -7.5%;
+}
+section img.other {
+  bottom: -8%;
+}
+section .left {
+  position: relative;
+}
+section .left img {
+  left: 0;
+}
+section .left .photobox::after {
+  right: -7.5%;
+}
+section .right {
+  position: relative;
+}
+section .nav-area {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+}
+
+section.reverse .photobox div {
+  right: 0;
+  left: unset;
+  transform-origin: right;
+}
+
+section.visible .photobox div {
+  width: 100%;
+}
+section.visible .photobox .grey-bg {
+  transition-delay: 0.36s;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0;
+  z-index: 3;
+}
+
+.reg-btn {
+  border: 1px solid;
+  border-color: black;
+  color: black;
+  transition: 0.36s ease;
+}
+
+a:hover .reg-btn, .reg-btn:hover {
+  border-color: #EDD8C4;
+}
+
+.burger span {
+  transition: 0.34s ease;
+  transform-origin: center;
+}
+
+.burger.open span.first {
+  width: 19px;
+  transform: rotate(-45deg) translateY(4px);
+}
+.burger.open span.second {
+  width: 19px;
+  transform: rotate(45deg) translateY(-4px);
+}
+
+nav {
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+  height: min-content;
+  align-items: center;
+  opacity: 0;
+  transition: 0.36s ease;
+  z-index: 6;
+}
+nav a {
+  color: black;
+  text-transform: uppercase;
+}
+nav #Elipsa_1, nav #Elipsa_2 {
+  fill: white;
+}
+
+.menubox {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  top: 0;
+  padding: 68px 14px 0;
+  padding: 18.75% 14px 0;
+  box-sizing: content-box;
+  transition: 0.3s ease-in;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  box-sizing: border-box;
+}
+.menubox a {
+  color: black;
+  font-size: 19px;
+  line-height: 44px;
+  letter-spacing: 0.912px;
+  text-transform: uppercase;
+}
+.menubox svg {
+  position: absolute;
+  right: -39.15%;
+  bottom: 1.5%;
+}
+
+header {
+  background-color: #F4F4F4;
+  position: relative;
+  overflow: hidden;
+}
+header main {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+}
+header main div.slide {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1.04s ease;
+  pointer-events: none;
+}
+header main div.slide p, header main div.slide a {
+  position: relative;
+}
+header main div.slide.on {
+  opacity: 1;
+  pointer-events: auto;
+}
+header main div.container {
+  position: absolute;
+  bottom: 0;
+  right: -4%;
+  z-index: 0;
+  height: 100%;
+  width: 104%;
+  overflow: hidden;
+  background-position: center;
+}
+header main div.container img {
+  position: absolute;
+  bottom: 0;
+  height: inherit;
+}
+header main .slider-nav__btns {
+  display: flex;
+}
+header main .slider-nav__btns button {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header main .slider-nav__btns button svg.circle {
+  position: absolute;
+  transform: rotate(270deg);
+  height: 16px;
+  width: 16px;
+}
+header main .slider-nav__btns button svg.circle circle {
+  stroke-dasharray: 100;
+  stroke-dashoffset: -100;
+}
+header main .slider-nav__btns button div.square {
+  width: 11.32px;
+  height: 11.32px;
+  border-color: white;
+  transform: rotate(45deg);
+  border-radius: 0;
+  background-color: black;
+}
+header main .slider-nav__btns button.on div {
+  animation: unrotate, unsquared, unfill, fill, squared, rotate;
+  animation-duration: 1.2s, 1.7s, 0.6s, 0.4s, 1.2s, 1.2s;
+  animation-fill-mode: forwards, forwards, forwards, forwards, forwards, forwards;
+  animation-delay: 0s, 0s, 0.15s, 5s, 4.8s, 5s;
+  background-color: black;
+  transform: rotate(45deg);
+  border-radius: 0;
+}
+header main .slider-nav__btns button.on .circle circle {
+  animation: circleLoader, opacity;
+  animation-duration: 4.3s, 0s;
+  animation-fill-mode: forwards, forwards;
+  animation-delay: 0s, 5s;
+}
+header main .wrapper {
+  z-index: 1;
+}
+header main h2 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+header main h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 26%;
+  background: white;
+  z-index: -1;
+}
+header .header-svg {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100vw;
+}
+header .slider-nav__btns {
+  z-index: 3;
+}
+header div.btnbox button:hover {
+  border-color: white;
+}
+
+@keyframes circleLoader {
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: -150;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fill {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: black;
+  }
+}
+@keyframes unfill {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+@keyframes unrotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes squared {
+  0% {
+    border-radius: 100%;
+  }
+  100% {
+    border-radius: 0;
+  }
+}
+@keyframes unsquared {
+  0% {
+    border-radius: 0;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+section.about {
+  justify-content: space-between;
+}
+section.about div.right {
+  width: 40%;
+}
+section.about div.left {
+  width: max-content;
+}
+section.about h2::after {
+  display: none;
+}
+
+section.pico-sure .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_1_bg.png");
+}
+
+section.hybrid {
+  overflow: visible;
+}
+section.hybrid .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_2_bg.png");
+}
+
+section.makeup .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_3_bg.png");
+}
+
+section.screw .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_4_bg.png");
+}
+
+section.changes .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_5_bg.png");
+}
+
+section.moles .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_6_bg.png");
+}
+
+section.fat .photobox .grey-bg {
+  background-image: url("assets/images/img_offer_7_bg.png");
+}
+
+section.light {
+  overflow: visible;
+  position: relative;
+}
+section.light svg.woman path {
+  stroke: #edd8c4;
+  stroke-dasharray: 15000;
+  stroke-dashoffset: 15000;
+}
+section.light svg.woman.visible path {
+  animation: woman 34s forwards;
+}
+section.light .left {
+  position: relative;
+}
+section.light .left h3 {
+  color: #EDD8C4;
+}
+section.light .right {
+  justify-content: center;
+}
+section.light .right .wrapper h2::after {
+  display: none;
+}
+section.light .svgbox {
+  position: relative;
+}
+section.light .svgbox svg.clinic .cls-1 {
+  fill: #edd8c4;
+}
+section.light .svgbox svg.clinic .cls-1, section.light .svgbox svg.clinic .cls-2 {
+  stroke: #edd8c4;
+}
+section.light .svgbox svg.clinic .cls-2 {
+  fill: #fff;
+}
+
+@keyframes woman {
+  0% {
+    stroke-dashoffset: 15000;
+  }
+  100% {
+    stroke-dashoffset: 30000;
+  }
+}
+section.contact {
+  position: relative;
+}
+section.contact .right {
+  justify-content: center;
+}
+section.contact .right svg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: inherit;
+  transition: 0.5s ease;
+}
+section.contact .right .wrapper p {
+  margin: 0;
+}
+
+footer {
+  background: #EDD8C4;
+}
+footer .wrapper {
+  width: 100%;
+  justify-content: space-between;
+}
+footer .wrapper .left div a, footer .wrapper .right div a {
+  width: max-content;
+  align-items: center;
+  position: relative;
+}
+footer .wrapper .left div a::after, footer .wrapper .right div a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  color: black;
+  bottom: 0;
+  left: 0;
+  transition: 0.34s ease;
+  background-color: black;
+  height: 1px;
+}
+footer .wrapper .left div a:hover::after, footer .wrapper .right div a:hover::after {
+  width: 100%;
+}
+footer .wrapper .left div a.insta circle.colored, footer .wrapper .right div a.insta circle.colored {
+  fill: #EDD8C4;
+}
+footer .wrapper .left .last, footer .wrapper .right .last {
+  margin-right: 0;
+}
+footer .bottom {
+  width: 102%;
+  justify-content: space-between;
+}
+footer .bottom a {
+  align-items: center;
+}
+
+.subpage header {
+  height: auto;
+}
+
+.contact section main {
+  width: 100%;
+}
+.contact section img {
+  position: unset;
+}
+.contact section label span {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.dropdown-topic {
+  position: relative;
+  z-index: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+input[type=radio] {
+  opacity: 0;
+}
+
+.inputbox {
+  position: relative;
+}
+.inputbox input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+  z-index: 2;
+}
+.inputbox i {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  place-content: center;
+  transition: 0.34s ease;
+}
+.inputbox i svg {
+  opacity: 0;
+  width: 100%;
+}
+.inputbox input[type=radio]:checked ~ i svg {
+  opacity: 1;
+}
+
+.inputbox:hover i {
+  border-color: #EDD8C4;
+}
+
+section.formcontainer button:not(.reg-btn) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+section.formcontainer .right .phonecall {
+  justify-content: space-between;
+}
+section.formcontainer .right .phonecall div {
+  text-transform: uppercase;
+  align-items: center;
+}
+section.formcontainer .right .yesbox, section.formcontainer .right .nobox {
+  width: 100%;
+  justify-content: space-between;
+}
+section.formcontainer .right .yesbox {
+  display: flex;
+}
+section.formcontainer .right .nobox {
+  display: none;
+}
+section.formcontainer .right .nobox .email-address {
+  width: 100%;
+}
+section.formcontainer .right .reg-btn {
+  width: fit-content;
+}
+
+.is-open .dropdown-form {
+  display: block;
+  z-index: 4;
+}
+.is-open .dropdown-arrow {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+.is-open .dropdown-arrow:before {
+  transform: translate(10px, 0);
+}
+.is-open .dropdown-arrow:after {
+  transform: rotate(90deg) translate(10px, 0);
+}
+
+.dropdown-button {
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-bottom-color: black;
+  transition: 0.36s ease;
+}
+.dropdown-button:hover {
+  border-bottom-color: #EDD8C4;
+}
+
+.dropdown-label {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.dropdown-form {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.dropdown-options {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.dropdown-options .option {
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: 0.36s ease;
+  border-bottom: 1px solid #EDD8C4;
+}
+.dropdown-options .option label {
+  display: flex;
+  width: 100%;
+  text-transform: none;
+  cursor: pointer;
+}
+.dropdown-options .option label input {
+  position: absolute;
+}
+
+.dropdown-arrow {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s ease;
+  text-align: left;
+  transform: rotate(45deg);
+  float: right;
+}
+.dropdown-arrow:before, .dropdown-arrow:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background-color: black;
+  transition: 0.3s ease;
+}
+.dropdown-arrow:after {
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.inputbox {
+  margin-right: 16px;
+}
+
+.dropdown-box {
+  position: relative;
+  justify-content: space-between;
+}
+.dropdown-box .phone-number {
+  width: 58.63%;
+}
+.dropdown-box .dropdown-time {
+  width: 38.04%;
+}
+.dropdown-box .dropdown-time button {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.input-wrapper {
+  border-bottom: 1px solid;
+  border-bottom-color: black;
+  transition: 0.36s ease;
+}
+.input-wrapper input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.input-wrapper:hover {
+  border-bottom-color: #EDD8C4;
+}
+
+iframe {
+  display: none;
+}
+
+.dropdown-topic {
+  position: relative;
+}
+.dropdown-topic svg.icon {
+  position: absolute;
+}
+
+.dropdown-time {
+  position: relative;
+}
+.dropdown-time svg.icon {
+  position: absolute;
+}
+
+.msgbox {
+  display: none;
+}
+.msgbox .input-wrapper {
+  position: relative;
+}
+.msgbox .input-wrapper textarea {
+  border: none;
+  outline: none;
+  position: relative;
+  resize: none;
+  background: none;
+}
+.msgbox .input-wrapper textarea::placeholder {
+  position: relative;
+  bottom: 1px;
+}
+
+.errorbox, .succesbox {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: 0.36s ease;
+  z-index: 10;
+}
+.errorbox div, .succesbox div {
+  background-color: white;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  transition: 0.36s ease;
+}
+
+.errorbox.active, .succesbox.active {
+  display: flex;
+}
+
+.errorbox {
+  background-color: rgba(237, 216, 196, 0.4);
+}
+
+.succesbox {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.succesbox div {
+  border: 1px solid black;
+}
+
+div.email-address.error .input-wrapper, div.phone-number.error .input-wrapper, div.namebox.error .input-wrapper, div.msgbox.error .input-wrapper {
+  border-bottom-color: #EB6969;
+}
+
+div.dropdown-topic.error button, div.dropdown-time.error button {
+  border-bottom-color: #EB6969;
+}
+
+body.prices .logo path.text {
+  fill: black;
+}
+body.prices section main {
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+body.prices section main div.flex {
+  justify-content: space-between;
+}
+body.prices section main div.flex div.price-wrapper div.flex {
+  width: 100%;
+  justify-content: space-between;
+}
+body.prices section main div.flex div.price-wrapper div.flex p.price {
+  text-transform: uppercase;
+}
+body.prices section main div.flex div.price-wrapper div.flex div.column {
+  margin-bottom: 0;
+}
+body.prices section main svg.luna {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+}
+body.prices section main svg.luna path {
+  stroke-dasharray: 11360;
+  stroke-dashoffset: 11360;
+}
+
+@keyframes luna {
+  to {
+    stroke-dashoffset: 22720;
+  }
+}
+body.offers section.offers {
+  position: relative;
+}
+
+body.about header {
+  background-color: unset;
+}
+body.about header main svg {
+  position: absolute;
+}
+body.about section .photobox .colored-bg {
+  width: 100%;
+}
+body.about section.s-1 .colored-bg {
+  background-image: url("assets/images/about/1.png");
+}
+body.about section.s-2 .colored-bg {
+  background-image: url("assets/images/about/2.png");
+}
+body.about section.s-3 .colored-bg {
+  background-image: url("assets/images/about/3.png");
+}
+body.about section.s-4 .colored-bg {
+  background-image: url("assets/images/about/4.jpg");
+}
+
+span.sub {
+  position: relative;
+  margin-right: 5px;
+}
+span.sub sub {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+}
+
+/*# sourceMappingURL=style.css.map */

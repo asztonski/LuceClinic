@@ -1,0 +1,390 @@
+// Root // 
+
+*
+    box-sizing: border-box
+
+html, body
+    margin: 0
+    padding: 0
+
+
+
+// Colors //
+
+
+$maincolor: #EDD8C4
+
+
+// Fonts //
+
+
+
+$opensans-font-path: "assets/fonts"
+
+
+@font-face 
+    font-family: 'Jost SemiBold'
+    src: url("#{$opensans-font-path}/Jost-SemiBold.ttf")
+
+@font-face 
+    font-family: 'OpenSans Regular'
+    src: url("#{$opensans-font-path}/OpenSans-Regular.ttf")
+
+@font-face 
+    font-family: 'OpenSans Bold'
+    src: url("#{$opensans-font-path}/OpenSans-Bold.ttf")
+
+
+h1,h2,h3,h4,h5, .counter
+    font-family: 'Jost SemiBold'
+    font-weight: 600
+    margin: 0
+
+
+a,p,button,span
+    font-family: 'OpenSans Regular'
+    font-weight: 400
+    margin: 0
+
+
+
+.bold
+    font-family: 'OpenSans Bold'
+    font-weight: 700
+
+.colored-bg
+    background-color: $maincolor
+
+.colored-f
+    color: $maincolor
+
+
+// General //
+
+.flex
+    display: flex
+
+.column
+    flex-direction: column
+
+a
+    text-decoration: none
+    color: black
+    z-index: 4
+
+ul 
+    list-style: none
+    padding: 0
+
+header, section
+    width: 100%
+    overflow-x: hidden
+
+section
+    justify-content: space-between
+    position: relative
+    overflow: hidden
+    & h2
+        position: relative
+        & span.reg
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                width: 113%
+                height: 16px
+                bottom: 20%
+                left: -2.5%
+                background-color: $maincolor
+                z-index: -1
+    & p
+        margin-top: 32px
+    & .photobox
+        position: relative
+        height: 624px
+        width: 45.556%
+        background-color: #FBFBFB
+        &::after
+            content: ''
+            position: absolute
+            border: 1px solid $maincolor
+            width: 100%
+            height: 100%
+            bottom: -7.5%
+            z-index: -1
+    & .left.photobox
+        &::after
+            right: -7.5%
+    & .right.photobox
+        &::after
+            left: -7.5%
+
+
+
+// Buttons //
+
+button 
+    background-color: transparent
+    border: none
+    cursor: pointer
+    text-transform: uppercase
+    padding: 0
+    z-index: 3
+
+.reg-btn
+    border: 2px solid
+    color: black
+
+header .reg-btn
+    border-color: $maincolor
+
+section .reg-btn
+    border-color: black
+
+
+// Nav // 
+
+nav 
+    background-color: black
+    justify-content: space-between
+    width: 100%
+    height: min-content
+    align-items: center
+    // & .linkbox
+    //     align-items: center
+    & a
+        color: white
+        text-transform: uppercase
+
+
+// Header // 
+
+header
+    height: 100vh
+    background-color: #F4F4F4
+    position: relative
+    overflow-y: hidden
+    & main
+        height: 100%
+        background-image: url('assets/images/header.png')
+        background-size: cover
+        & h2
+            position: relative
+            z-index: 1
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                height: 36.1%
+                width: 116.415%
+                left: -33%
+                bottom: 26%
+                background: white
+                z-index: -1
+        // & .colorspan
+        //     background: white
+        //     display: block
+        //     position: absolute
+        //     left: 0
+        //     bottom: 50%
+        //     height: 1.65%
+        //     width: 45.105%
+
+    & .header-svg
+        position: absolute
+        bottom: -1%
+        left: 0
+        right: 0
+        margin: auto
+
+
+    
+// About //
+
+section.about
+    padding-right: 21.75%
+    justify-content: space-between
+    & div.right
+        width: 40%
+    & div.left
+        width: max-content
+    & h2
+        &::after
+            display: none
+    & p
+        margin-top: 0
+
+    
+// Pico Sure //
+
+section.pico-sure
+    & .left
+        background-image: url('assets/images/1.png')
+    & .right
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 70%
+
+
+
+// Hybrid //
+
+section.hybrid
+    overflow: visible
+    // padding-top: 144px
+    & .left
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 67%
+    & .right
+        width: 45%
+        & .photobox
+            width: 100%
+            &::after
+                left: -7.5%
+    & img
+        position: absolute
+        bottom: -27%
+
+// Makeup // 
+
+section.makeup
+    & .left
+        background-image: url('assets/images/3.png')
+    & .right
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 70%
+
+
+// Screw // 
+
+section.screw
+    & .right
+        background-image: url('assets/images/4.png')
+    & .left
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 67%
+
+            
+// Changes //
+
+section.changes
+    & .left
+        background-image: url('assets/images/5.png')
+    & .right
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 70%
+     
+
+// Moles // 
+
+section.moles
+    & .right
+        background-image: url('assets/images/6.png')
+    & .left
+        width: 50%
+        align-items: center
+        justify-content: center
+        & .wrapper
+            width: 67%
+
+
+// Light // 
+
+section.light
+    overflow: visible
+    & .left
+        position: relative
+        & svg.woman
+            position: absolute
+            top: 0
+            top: -17%
+            left: -24%
+        & h3
+            color: $maincolor
+    & .right
+        width: 48%
+        justify-content: center
+        & .wrapper
+            width: 77%
+            & h2
+                &::after
+                    display: none
+    & .svgbox
+        position: relative
+        & svg.clinic
+            position: absolute
+            right: 0.2%
+            bottom: 4.1%
+
+// Contact //
+
+
+section.contact
+    & .left
+        justify-content: center
+        align-items: center
+        & .wrapper
+            width: 62%
+    & .right
+        width: 50%
+        justify-content: center
+        align-items: center
+        & .wrapper
+            width: 67%
+            & p
+                margin: 0
+
+
+
+// Footer //
+
+footer
+    background: $maincolor
+    padding: 90px 192px 32px
+    & .wrapper
+        width: 100%
+        margin-bottom: 144px
+        justify-content: space-between
+        & .left,.right
+            & div
+                margin-right: 88px
+                & h5
+                    font-size: 22px
+                    margin-bottom: 16px
+                & a
+                    line-height: 32px
+                    width: max-content
+                    align-items: center
+                    & svg
+                        margin-right: 16px
+                & a.flex
+                    margin-bottom: 8px
+                & a.phone
+                    margin-top: 40px
+            & .last
+                margin-right: 0
+    & .bottom
+        width: 100%
+        justify-content: space-between
+        & a
+            align-items: center
+            & svg
+                margin-left: 16px
+
+
+
