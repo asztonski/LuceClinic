@@ -111,9 +111,12 @@ footer a, p, span, .contact main a, ul li {
   margin: 0;
 }
 
+nav a {
+  transition: 0.34s ease;
+}
+
 nav a:hover {
   color: #EDD8C4;
-  transition: 0.34s ease;
 }
 
 ::-webkit-input-placeholder {
